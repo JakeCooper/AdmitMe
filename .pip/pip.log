@@ -1,9 +1,9 @@
 ------------------------------------------------------------
-/usr/bin/pip run on Sat Sep 10 18:08:47 2016
-Downloading/unpacking SciPy
-  Getting page https://pypi.python.org/simple/SciPy/
-  URLs to search for versions for SciPy:
-  * https://pypi.python.org/simple/SciPy/
+/root/virtualenv/bin/pip run on Sun Sep 11 06:24:47 2016
+Downloading/unpacking scipy
+  Getting page https://pypi.python.org/simple/scipy/
+  URLs to search for versions for scipy:
+  * https://pypi.python.org/simple/scipy/
   Analyzing links from page https://pypi.python.org/simple/scipy/
     Skipping https://pypi.python.org/packages/00/0f/060ec52cb74dc8df1a7ef1a524173eb0bcd329110404869b392685cfc5c8/scipy-0.15.1-cp27-cp27mu-manylinux1_x86_64.whl#md5=aaac02e6535742ab02f2075129890714 (from https://pypi.python.org/simple/scipy/) because it is not compatible with this Python
     Found link https://pypi.python.org/packages/01/a1/dce70d47377d662aa4b0895df8431aee92cea6faefaab9dae21b0f901ded/scipy-0.18.0.tar.gz#md5=d70e7f533622ab705bc016dac328d93e (from https://pypi.python.org/simple/scipy/), version: 0.18.0
@@ -207,7 +207,7 @@ Downloading/unpacking SciPy
   Ignoring link https://pypi.python.org/packages/86/e6/abd42b57e41a3bb87c1e4f4b8455267e010c1b2a4c7ed18ccc4b9ac7fbbc/scipy-0.18.0rc2.tar.gz#md5=499c9ebb0d4f6f596ef26a771c37b03b (from https://pypi.python.org/simple/scipy/), version 0.18.0rc2 is a pre-release (use --pre to allow).
   Using version 0.18.0 (newest of versions: 0.18.0, 0.18.0, 0.17.1, 0.17.1, 0.17.0, 0.17.0, 0.16.1, 0.16.1, 0.16.0, 0.16.0, 0.15.1, 0.15.1, 0.15.0, 0.15.0, 0.14.1, 0.14.1, 0.14.0, 0.14.0, 0.13.3, 0.13.3, 0.13.2, 0.13.2, 0.13.1, 0.13.1, 0.13.0, 0.13.0, 0.12.1, 0.12.1, 0.12.0, 0.12.0, 0.11.0, 0.11.0, 0.10.1, 0.10.1, 0.10.0, 0.10.0, 0.9.0, 0.9.0, 0.8.0)
   Downloading from URL https://pypi.python.org/packages/01/a1/dce70d47377d662aa4b0895df8431aee92cea6faefaab9dae21b0f901ded/scipy-0.18.0.tar.gz#md5=d70e7f533622ab705bc016dac328d93e (from https://pypi.python.org/simple/scipy/)
-  Running setup.py (path:/tmp/pip_build_root/SciPy/setup.py) egg_info for package SciPy
+  Running setup.py (path:/root/virtualenv/build/scipy/setup.py) egg_info for package scipy
     running egg_info
     creating pip-egg-info/scipy.egg-info
     writing pip-egg-info/scipy.egg-info/PKG-INFO
@@ -227,16 +227,16 @@ Downloading/unpacking SciPy
     no previously-included directories found matching 'scipy/special/tests/data/gsl'
     no previously-included directories found matching 'doc/build'
     no previously-included directories found matching 'doc/source/generated'
-    no previously-included directories found matching '*/__pycache__'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
     warning: no previously-included files matching '*~' found anywhere in distribution
     warning: no previously-included files matching '*.bak' found anywhere in distribution
     warning: no previously-included files matching '*.swp' found anywhere in distribution
     warning: no previously-included files matching '*.pyo' found anywhere in distribution
     writing manifest file 'pip-egg-info/scipy.egg-info/SOURCES.txt'
-  Source in /tmp/pip_build_root/SciPy has version 0.18.0, which satisfies requirement SciPy
-Installing collected packages: SciPy
-  Running setup.py install for SciPy
-    Running command /usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip_build_root/SciPy/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-MMBDQ2-record/install-record.txt --single-version-externally-managed --compile
+  Source in ./virtualenv/build/scipy has version 0.18.0, which satisfies requirement scipy
+Installing collected packages: scipy
+  Running setup.py install for scipy
+    Running command /root/virtualenv/bin/python -c "import setuptools, tokenize;__file__='/root/virtualenv/build/scipy/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-_daurqcs-record/install-record.txt --single-version-externally-managed --compile --install-headers /root/virtualenv/include/site/python3.4
     
     Note: if you need reliable uninstall behavior, then install
     with pip instead of using `setup.py install`:
@@ -248,32 +248,36 @@ Installing collected packages: SciPy
     
     lapack_opt_info:
     openblas_lapack_info:
-      libraries openblas not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
+      libraries openblas not found in ['/root/virtualenv/lib', '/usr/local/lib', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
       NOT AVAILABLE
     
     lapack_mkl_info:
     mkl_info:
-      libraries mkl,vml,guide not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
+      libraries mkl,vml,guide not found in ['/root/virtualenv/lib', '/usr/local/lib', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
       NOT AVAILABLE
     
       NOT AVAILABLE
     
     atlas_3_10_threads_info:
     Setting PTATLAS=ATLAS
+      libraries tatlas,tatlas not found in /root/virtualenv/lib
+      libraries lapack_atlas not found in /root/virtualenv/lib
       libraries tatlas,tatlas not found in /usr/local/lib
       libraries lapack_atlas not found in /usr/local/lib
+      libraries tatlas,tatlas not found in /usr/lib/atlas-base
       libraries tatlas,tatlas not found in /usr/lib
-      libraries lapack_atlas not found in /usr/lib
       libraries tatlas,tatlas not found in /usr/lib/x86_64-linux-gnu
       libraries lapack_atlas not found in /usr/lib/x86_64-linux-gnu
     <class 'numpy.distutils.system_info.atlas_3_10_threads_info'>
       NOT AVAILABLE
     
     atlas_3_10_info:
+      libraries satlas,satlas not found in /root/virtualenv/lib
+      libraries lapack_atlas not found in /root/virtualenv/lib
       libraries satlas,satlas not found in /usr/local/lib
       libraries lapack_atlas not found in /usr/local/lib
+      libraries satlas,satlas not found in /usr/lib/atlas-base
       libraries satlas,satlas not found in /usr/lib
-      libraries lapack_atlas not found in /usr/lib
       libraries satlas,satlas not found in /usr/lib/x86_64-linux-gnu
       libraries lapack_atlas not found in /usr/lib/x86_64-linux-gnu
     <class 'numpy.distutils.system_info.atlas_3_10_info'>
@@ -281,331 +285,3207 @@ Installing collected packages: SciPy
     
     atlas_threads_info:
     Setting PTATLAS=ATLAS
+      libraries ptf77blas,ptcblas,atlas not found in /root/virtualenv/lib
+      libraries lapack_atlas not found in /root/virtualenv/lib
       libraries ptf77blas,ptcblas,atlas not found in /usr/local/lib
       libraries lapack_atlas not found in /usr/local/lib
+      libraries ptf77blas,ptcblas,atlas not found in /usr/lib/atlas-base
       libraries ptf77blas,ptcblas,atlas not found in /usr/lib
-      libraries lapack_atlas not found in /usr/lib
       libraries ptf77blas,ptcblas,atlas not found in /usr/lib/x86_64-linux-gnu
       libraries lapack_atlas not found in /usr/lib/x86_64-linux-gnu
     <class 'numpy.distutils.system_info.atlas_threads_info'>
       NOT AVAILABLE
     
     atlas_info:
+      libraries f77blas,cblas,atlas not found in /root/virtualenv/lib
+      libraries lapack_atlas not found in /root/virtualenv/lib
       libraries f77blas,cblas,atlas not found in /usr/local/lib
       libraries lapack_atlas not found in /usr/local/lib
-      libraries f77blas,cblas,atlas not found in /usr/lib
-      libraries lapack_atlas not found in /usr/lib
-      libraries f77blas,cblas,atlas not found in /usr/lib/x86_64-linux-gnu
-      libraries lapack_atlas not found in /usr/lib/x86_64-linux-gnu
     <class 'numpy.distutils.system_info.atlas_info'>
+      libraries f77blas not found in []
+    Runtime library f77blas was not found. Ignoring
+      libraries cblas not found in []
+    Runtime library cblas was not found. Ignoring
+      FOUND:
+        library_dirs = ['/usr/lib/atlas-base/atlas', '/usr/lib/atlas-base']
+        language = f77
+        libraries = ['lapack', 'f77blas', 'cblas', 'atlas', 'f77blas', 'cblas']
+        include_dirs = ['/usr/include/atlas']
+        define_macros = [('NO_ATLAS_INFO', -1)]
+    
+      FOUND:
+        library_dirs = ['/usr/lib/atlas-base/atlas', '/usr/lib/atlas-base']
+        language = f77
+        libraries = ['lapack', 'f77blas', 'cblas', 'atlas', 'f77blas', 'cblas']
+        include_dirs = ['/usr/include/atlas']
+        define_macros = [('NO_ATLAS_INFO', -1)]
+    
+    Splitting linalg.interpolative Fortran source files
+    blas_opt_info:
+    blas_mkl_info:
+      libraries mkl,vml,guide not found in ['/root/virtualenv/lib', '/usr/local/lib', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
       NOT AVAILABLE
     
-    /usr/local/lib/python2.7/dist-packages/numpy/distutils/system_info.py:1548: UserWarning:
-        Atlas (http://math-atlas.sourceforge.net/) libraries not found.
-        Directories to search for the libraries can be specified in the
-        numpy/distutils/site.cfg file (section [atlas]) or by setting
-        the ATLAS environment variable.
-      warnings.warn(AtlasNotFoundError.__doc__)
-    lapack_info:
-      libraries lapack not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
+    openblas_info:
+      libraries openblas not found in ['/root/virtualenv/lib', '/usr/local/lib', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
       NOT AVAILABLE
     
-    /usr/local/lib/python2.7/dist-packages/numpy/distutils/system_info.py:1559: UserWarning:
-        Lapack (http://www.netlib.org/lapack/) libraries not found.
-        Directories to search for the libraries can be specified in the
-        numpy/distutils/site.cfg file (section [lapack]) or by setting
-        the LAPACK environment variable.
-      warnings.warn(LapackNotFoundError.__doc__)
-    lapack_src_info:
+    atlas_3_10_blas_threads_info:
+    Setting PTATLAS=ATLAS
+      libraries tatlas not found in ['/root/virtualenv/lib', '/usr/local/lib', '/usr/lib/atlas-base', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
       NOT AVAILABLE
     
-    /usr/local/lib/python2.7/dist-packages/numpy/distutils/system_info.py:1562: UserWarning:
-        Lapack (http://www.netlib.org/lapack/) sources not found.
-        Directories to search for the sources can be specified in the
-        numpy/distutils/site.cfg file (section [lapack_src]) or by setting
-        the LAPACK_SRC environment variable.
-      warnings.warn(LapackSrcNotFoundError.__doc__)
+    atlas_3_10_blas_info:
+      libraries satlas not found in ['/root/virtualenv/lib', '/usr/local/lib', '/usr/lib/atlas-base', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
       NOT AVAILABLE
     
-    Running from scipy source directory.
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip_build_root/SciPy/setup.py", line 415, in <module>
-        setup_package()
-      File "/tmp/pip_build_root/SciPy/setup.py", line 411, in setup_package
-        setup(**metadata)
-      File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/core.py", line 135, in setup
-        config = configuration()
-      File "/tmp/pip_build_root/SciPy/setup.py", line 335, in configuration
-        config.add_subpackage('scipy')
-      File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/misc_util.py", line 1003, in add_subpackage
-        caller_level = 2)
-      File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/misc_util.py", line 972, in get_subpackage
-        caller_level = caller_level + 1)
-      File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/misc_util.py", line 909, in _get_configuration_from_setup_py
-        config = setup_module.configuration(*args)
-      File "scipy/setup.py", line 15, in configuration
-        config.add_subpackage('linalg')
-      File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/misc_util.py", line 1003, in add_subpackage
-        caller_level = 2)
-      File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/misc_util.py", line 972, in get_subpackage
-        caller_level = caller_level + 1)
-      File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/misc_util.py", line 909, in _get_configuration_from_setup_py
-        config = setup_module.configuration(*args)
-      File "scipy/linalg/setup.py", line 20, in configuration
-        raise NotFoundError('no lapack/blas resources found')
-    numpy.distutils.system_info.NotFoundError: no lapack/blas resources found
-    Complete output from command /usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip_build_root/SciPy/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-MMBDQ2-record/install-record.txt --single-version-externally-managed --compile:
+    atlas_blas_threads_info:
+    Setting PTATLAS=ATLAS
+      libraries ptf77blas,ptcblas,atlas not found in ['/root/virtualenv/lib', '/usr/local/lib', '/usr/lib/atlas-base', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
+      NOT AVAILABLE
     
-
-Note: if you need reliable uninstall behavior, then install
-
-with pip instead of using `setup.py install`:
-
-
-
-  - `pip install .`       (from a git repo or downloaded source
-
-                           release)
-
-  - `pip install scipy`   (last SciPy release on PyPI)
-
-
-
-
-
-lapack_opt_info:
-
-openblas_lapack_info:
-
-  libraries openblas not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
-
-  NOT AVAILABLE
-
-
-
-lapack_mkl_info:
-
-mkl_info:
-
-  libraries mkl,vml,guide not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
-
-  NOT AVAILABLE
-
-
-
-  NOT AVAILABLE
-
-
-
-atlas_3_10_threads_info:
-
-Setting PTATLAS=ATLAS
-
-  libraries tatlas,tatlas not found in /usr/local/lib
-
-  libraries lapack_atlas not found in /usr/local/lib
-
-  libraries tatlas,tatlas not found in /usr/lib
-
-  libraries lapack_atlas not found in /usr/lib
-
-  libraries tatlas,tatlas not found in /usr/lib/x86_64-linux-gnu
-
-  libraries lapack_atlas not found in /usr/lib/x86_64-linux-gnu
-
-<class 'numpy.distutils.system_info.atlas_3_10_threads_info'>
-
-  NOT AVAILABLE
-
-
-
-atlas_3_10_info:
-
-  libraries satlas,satlas not found in /usr/local/lib
-
-  libraries lapack_atlas not found in /usr/local/lib
-
-  libraries satlas,satlas not found in /usr/lib
-
-  libraries lapack_atlas not found in /usr/lib
-
-  libraries satlas,satlas not found in /usr/lib/x86_64-linux-gnu
-
-  libraries lapack_atlas not found in /usr/lib/x86_64-linux-gnu
-
-<class 'numpy.distutils.system_info.atlas_3_10_info'>
-
-  NOT AVAILABLE
-
-
-
-atlas_threads_info:
-
-Setting PTATLAS=ATLAS
-
-  libraries ptf77blas,ptcblas,atlas not found in /usr/local/lib
-
-  libraries lapack_atlas not found in /usr/local/lib
-
-  libraries ptf77blas,ptcblas,atlas not found in /usr/lib
-
-  libraries lapack_atlas not found in /usr/lib
-
-  libraries ptf77blas,ptcblas,atlas not found in /usr/lib/x86_64-linux-gnu
-
-  libraries lapack_atlas not found in /usr/lib/x86_64-linux-gnu
-
-<class 'numpy.distutils.system_info.atlas_threads_info'>
-
-  NOT AVAILABLE
-
-
-
-atlas_info:
-
-  libraries f77blas,cblas,atlas not found in /usr/local/lib
-
-  libraries lapack_atlas not found in /usr/local/lib
-
-  libraries f77blas,cblas,atlas not found in /usr/lib
-
-  libraries lapack_atlas not found in /usr/lib
-
-  libraries f77blas,cblas,atlas not found in /usr/lib/x86_64-linux-gnu
-
-  libraries lapack_atlas not found in /usr/lib/x86_64-linux-gnu
-
-<class 'numpy.distutils.system_info.atlas_info'>
-
-  NOT AVAILABLE
-
-
-
-/usr/local/lib/python2.7/dist-packages/numpy/distutils/system_info.py:1548: UserWarning:
-
-    Atlas (http://math-atlas.sourceforge.net/) libraries not found.
-
-    Directories to search for the libraries can be specified in the
-
-    numpy/distutils/site.cfg file (section [atlas]) or by setting
-
-    the ATLAS environment variable.
-
-  warnings.warn(AtlasNotFoundError.__doc__)
-
-lapack_info:
-
-  libraries lapack not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
-
-  NOT AVAILABLE
-
-
-
-/usr/local/lib/python2.7/dist-packages/numpy/distutils/system_info.py:1559: UserWarning:
-
-    Lapack (http://www.netlib.org/lapack/) libraries not found.
-
-    Directories to search for the libraries can be specified in the
-
-    numpy/distutils/site.cfg file (section [lapack]) or by setting
-
-    the LAPACK environment variable.
-
-  warnings.warn(LapackNotFoundError.__doc__)
-
-lapack_src_info:
-
-  NOT AVAILABLE
-
-
-
-/usr/local/lib/python2.7/dist-packages/numpy/distutils/system_info.py:1562: UserWarning:
-
-    Lapack (http://www.netlib.org/lapack/) sources not found.
-
-    Directories to search for the sources can be specified in the
-
-    numpy/distutils/site.cfg file (section [lapack_src]) or by setting
-
-    the LAPACK_SRC environment variable.
-
-  warnings.warn(LapackSrcNotFoundError.__doc__)
-
-  NOT AVAILABLE
-
-
-
-Running from scipy source directory.
-
-Traceback (most recent call last):
-
-  File "<string>", line 1, in <module>
-
-  File "/tmp/pip_build_root/SciPy/setup.py", line 415, in <module>
-
-    setup_package()
-
-  File "/tmp/pip_build_root/SciPy/setup.py", line 411, in setup_package
-
-    setup(**metadata)
-
-  File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/core.py", line 135, in setup
-
-    config = configuration()
-
-  File "/tmp/pip_build_root/SciPy/setup.py", line 335, in configuration
-
-    config.add_subpackage('scipy')
-
-  File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/misc_util.py", line 1003, in add_subpackage
-
-    caller_level = 2)
-
-  File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/misc_util.py", line 972, in get_subpackage
-
-    caller_level = caller_level + 1)
-
-  File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/misc_util.py", line 909, in _get_configuration_from_setup_py
-
-    config = setup_module.configuration(*args)
-
-  File "scipy/setup.py", line 15, in configuration
-
-    config.add_subpackage('linalg')
-
-  File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/misc_util.py", line 1003, in add_subpackage
-
-    caller_level = 2)
-
-  File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/misc_util.py", line 972, in get_subpackage
-
-    caller_level = caller_level + 1)
-
-  File "/usr/local/lib/python2.7/dist-packages/numpy/distutils/misc_util.py", line 909, in _get_configuration_from_setup_py
-
-    config = setup_module.configuration(*args)
-
-  File "scipy/linalg/setup.py", line 20, in configuration
-
-    raise NotFoundError('no lapack/blas resources found')
-
-numpy.distutils.system_info.NotFoundError: no lapack/blas resources found
-
-----------------------------------------
+    atlas_blas_info:
+      libraries f77blas not found in []
+    Runtime library f77blas was not found. Ignoring
+      libraries cblas not found in []
+    Runtime library cblas was not found. Ignoring
+      FOUND:
+        library_dirs = ['/usr/lib/atlas-base']
+        language = c
+        libraries = ['f77blas', 'cblas', 'atlas', 'f77blas', 'cblas']
+        include_dirs = ['/usr/include/atlas']
+        define_macros = [('HAVE_CBLAS', None), ('NO_ATLAS_INFO', -1)]
+    
+      FOUND:
+        library_dirs = ['/usr/lib/atlas-base']
+        language = c
+        libraries = ['f77blas', 'cblas', 'atlas', 'f77blas', 'cblas']
+        include_dirs = ['/usr/include/atlas']
+        define_macros = [('HAVE_CBLAS', None), ('NO_ATLAS_INFO', -1)]
+    
+    non-existing path in 'scipy/sparse': 'sparsetools/sparsetools_impl.h'
+    non-existing path in 'scipy/sparse': 'sparsetools/bsr_impl.h'
+    non-existing path in 'scipy/sparse': 'sparsetools/csc_impl.h'
+    non-existing path in 'scipy/sparse': 'sparsetools/csr_impl.h'
+    non-existing path in 'scipy/sparse': 'sparsetools/other_impl.h'
+    running install
+    running build
+    running config_cc
+    unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+    running config_fc
+    unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+    running build_src
+    build_src
+    building py_modules sources
+    creating build
+    creating build/src.linux-x86_64-3.4
+    creating build/src.linux-x86_64-3.4/scipy
+    building library "dfftpack" sources
+    building library "fftpack" sources
+    building library "mach" sources
+    building library "quadpack" sources
+    building library "odepack" sources
+    building library "dop" sources
+    building library "fitpack" sources
+    building library "fwrappers" sources
+    building library "odrpack" sources
+    building library "minpack" sources
+    building library "rootfind" sources
+    building library "superlu_src" sources
+    building library "arpack_scipy" sources
+    building library "sc_c_misc" sources
+    building library "sc_cephes" sources
+    building library "sc_mach" sources
+    building library "sc_amos" sources
+    building library "sc_cdf" sources
+    building library "sc_specfun" sources
+    building library "statlib" sources
+    building extension "scipy.cluster._vq" sources
+    building extension "scipy.cluster._hierarchy" sources
+    building extension "scipy.fftpack._fftpack" sources
+    creating build/src.linux-x86_64-3.4/scipy/fftpack
+    creating build/src.linux-x86_64-3.4/scipy/fftpack/src
+    conv_template:> build/src.linux-x86_64-3.4/scipy/fftpack/src/dct.c
+    conv_template:> build/src.linux-x86_64-3.4/scipy/fftpack/src/dst.c
+    f2py options: []
+    f2py: scipy/fftpack/fftpack.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/fftpack/fftpack.pyf' (format:free)
+    Line #86 in scipy/fftpack/fftpack.pyf:"       /* Single precision version */"
+    	crackline:2: No pattern for line
+    Post-processing...
+    	Block: _fftpack
+    			Block: zfft
+    			Block: drfft
+    			Block: zrfft
+    			Block: zfftnd
+    			Block: destroy_zfft_cache
+    			Block: destroy_zfftnd_cache
+    			Block: destroy_drfft_cache
+    			Block: cfft
+    			Block: rfft
+    			Block: crfft
+    			Block: cfftnd
+    			Block: destroy_cfft_cache
+    			Block: destroy_cfftnd_cache
+    			Block: destroy_rfft_cache
+    			Block: ddct1
+    			Block: ddct2
+    			Block: ddct3
+    			Block: dct1
+    			Block: dct2
+    			Block: dct3
+    			Block: destroy_ddct2_cache
+    			Block: destroy_ddct1_cache
+    			Block: destroy_dct2_cache
+    			Block: destroy_dct1_cache
+    			Block: ddst1
+    			Block: ddst2
+    			Block: ddst3
+    			Block: dst1
+    			Block: dst2
+    			Block: dst3
+    			Block: destroy_ddst2_cache
+    			Block: destroy_ddst1_cache
+    			Block: destroy_dst2_cache
+    			Block: destroy_dst1_cache
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "_fftpack"...
+    		Constructing wrapper function "zfft"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = zfft(x,[n,direction,normalize,overwrite_x])
+    		Constructing wrapper function "drfft"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = drfft(x,[n,direction,normalize,overwrite_x])
+    		Constructing wrapper function "zrfft"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = zrfft(x,[n,direction,normalize,overwrite_x])
+    		Constructing wrapper function "zfftnd"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = zfftnd(x,[s,direction,normalize,overwrite_x])
+    		Constructing wrapper function "destroy_zfft_cache"...
+    		  destroy_zfft_cache()
+    		Constructing wrapper function "destroy_zfftnd_cache"...
+    		  destroy_zfftnd_cache()
+    		Constructing wrapper function "destroy_drfft_cache"...
+    		  destroy_drfft_cache()
+    		Constructing wrapper function "cfft"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = cfft(x,[n,direction,normalize,overwrite_x])
+    		Constructing wrapper function "rfft"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = rfft(x,[n,direction,normalize,overwrite_x])
+    		Constructing wrapper function "crfft"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = crfft(x,[n,direction,normalize,overwrite_x])
+    		Constructing wrapper function "cfftnd"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = cfftnd(x,[s,direction,normalize,overwrite_x])
+    		Constructing wrapper function "destroy_cfft_cache"...
+    		  destroy_cfft_cache()
+    		Constructing wrapper function "destroy_cfftnd_cache"...
+    		  destroy_cfftnd_cache()
+    		Constructing wrapper function "destroy_rfft_cache"...
+    		  destroy_rfft_cache()
+    		Constructing wrapper function "ddct1"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = ddct1(x,[n,normalize,overwrite_x])
+    		Constructing wrapper function "ddct2"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = ddct2(x,[n,normalize,overwrite_x])
+    		Constructing wrapper function "ddct3"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = ddct3(x,[n,normalize,overwrite_x])
+    		Constructing wrapper function "dct1"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = dct1(x,[n,normalize,overwrite_x])
+    		Constructing wrapper function "dct2"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = dct2(x,[n,normalize,overwrite_x])
+    		Constructing wrapper function "dct3"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = dct3(x,[n,normalize,overwrite_x])
+    		Constructing wrapper function "destroy_ddct2_cache"...
+    		  destroy_ddct2_cache()
+    		Constructing wrapper function "destroy_ddct1_cache"...
+    		  destroy_ddct1_cache()
+    		Constructing wrapper function "destroy_dct2_cache"...
+    		  destroy_dct2_cache()
+    		Constructing wrapper function "destroy_dct1_cache"...
+    		  destroy_dct1_cache()
+    		Constructing wrapper function "ddst1"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = ddst1(x,[n,normalize,overwrite_x])
+    		Constructing wrapper function "ddst2"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = ddst2(x,[n,normalize,overwrite_x])
+    		Constructing wrapper function "ddst3"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = ddst3(x,[n,normalize,overwrite_x])
+    		Constructing wrapper function "dst1"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = dst1(x,[n,normalize,overwrite_x])
+    		Constructing wrapper function "dst2"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = dst2(x,[n,normalize,overwrite_x])
+    		Constructing wrapper function "dst3"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = dst3(x,[n,normalize,overwrite_x])
+    		Constructing wrapper function "destroy_ddst2_cache"...
+    		  destroy_ddst2_cache()
+    		Constructing wrapper function "destroy_ddst1_cache"...
+    		  destroy_ddst1_cache()
+    		Constructing wrapper function "destroy_dst2_cache"...
+    		  destroy_dst2_cache()
+    		Constructing wrapper function "destroy_dst1_cache"...
+    		  destroy_dst1_cache()
+    	Wrote C/API module "_fftpack" to file "build/src.linux-x86_64-3.4/scipy/fftpack/_fftpackmodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    copying /root/virtualenv/lib/python3.4/site-packages/numpy/f2py/src/fortranobject.c -> build/src.linux-x86_64-3.4
+    copying /root/virtualenv/lib/python3.4/site-packages/numpy/f2py/src/fortranobject.h -> build/src.linux-x86_64-3.4
+    building extension "scipy.fftpack.convolve" sources
+    f2py options: []
+    f2py: scipy/fftpack/convolve.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/fftpack/convolve.pyf' (format:free)
+    Post-processing...
+    	Block: convolve__user__routines
+    			Block: kernel_func
+    	Block: convolve
+    			Block: init_convolution_kernel
+    In: scipy/fftpack/convolve.pyf:convolve:unknown_interface:init_convolution_kernel
+    get_useparameters: no module convolve__user__routines info used by init_convolution_kernel
+    			Block: destroy_convolve_cache
+    			Block: convolve
+    			Block: convolve_z
+    Post-processing (stage 2)...
+    Building modules...
+    	Constructing call-back function "cb_kernel_func_in_convolve__user__routines"
+    	  def kernel_func(k): return kernel_func
+    	Building module "convolve"...
+    		Constructing wrapper function "init_convolution_kernel"...
+    		  omega = init_convolution_kernel(n,kernel_func,[d,zero_nyquist,kernel_func_extra_args])
+    		Constructing wrapper function "destroy_convolve_cache"...
+    		  destroy_convolve_cache()
+    		Constructing wrapper function "convolve"...
+    		  y = convolve(x,omega,[swap_real_imag,overwrite_x])
+    		Constructing wrapper function "convolve_z"...
+    		  y = convolve_z(x,omega_real,omega_imag,[overwrite_x])
+    	Wrote C/API module "convolve" to file "build/src.linux-x86_64-3.4/scipy/fftpack/convolvemodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.integrate._quadpack" sources
+    building extension "scipy.integrate._odepack" sources
+    building extension "scipy.integrate.vode" sources
+    creating build/src.linux-x86_64-3.4/scipy/integrate
+    f2py options: []
+    f2py: scipy/integrate/vode.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/integrate/vode.pyf' (format:free)
+    Post-processing...
+    	Block: dvode__user__routines
+    		Block: dvode_user_interface
+    			Block: f
+    			Block: jac
+    	Block: zvode__user__routines
+    		Block: zvode_user_interface
+    			Block: f
+    			Block: jac
+    	Block: vode
+    			Block: dvode
+    In: scipy/integrate/vode.pyf:vode:unknown_interface:dvode
+    get_useparameters: no module dvode__user__routines info used by dvode
+    			Block: zvode
+    In: scipy/integrate/vode.pyf:vode:unknown_interface:zvode
+    get_useparameters: no module zvode__user__routines info used by zvode
+    Post-processing (stage 2)...
+    Building modules...
+    	Constructing call-back function "cb_f_in_dvode__user__routines"
+    	  def f(t,y): return ydot
+    	Constructing call-back function "cb_jac_in_dvode__user__routines"
+    	  def jac(t,y): return jac
+    	Constructing call-back function "cb_f_in_zvode__user__routines"
+    	  def f(t,y): return ydot
+    	Constructing call-back function "cb_jac_in_zvode__user__routines"
+    	  def jac(t,y): return jac
+    	Building module "vode"...
+    		Constructing wrapper function "dvode"...
+    warning: callstatement is defined without callprotoargument
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y,t,istate = dvode(f,jac,y,t,tout,rtol,atol,itask,istate,rwork,iwork,mf,[f_extra_args,jac_extra_args,overwrite_y])
+    		Constructing wrapper function "zvode"...
+    warning: callstatement is defined without callprotoargument
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y,t,istate = zvode(f,jac,y,t,tout,rtol,atol,itask,istate,zwork,rwork,iwork,mf,[f_extra_args,jac_extra_args,overwrite_y])
+    	Wrote C/API module "vode" to file "build/src.linux-x86_64-3.4/scipy/integrate/vodemodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.integrate.lsoda" sources
+    f2py options: []
+    f2py: scipy/integrate/lsoda.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/integrate/lsoda.pyf' (format:free)
+    Post-processing...
+    	Block: lsoda__user__routines
+    		Block: lsoda_user_interface
+    			Block: f
+    			Block: jac
+    	Block: lsoda
+    			Block: lsoda
+    In: scipy/integrate/lsoda.pyf:lsoda:unknown_interface:lsoda
+    get_useparameters: no module lsoda__user__routines info used by lsoda
+    Post-processing (stage 2)...
+    Building modules...
+    	Constructing call-back function "cb_f_in_lsoda__user__routines"
+    	  def f(t,y): return ydot
+    	Constructing call-back function "cb_jac_in_lsoda__user__routines"
+    	  def jac(t,y): return jac
+    	Building module "lsoda"...
+    		Constructing wrapper function "lsoda"...
+    warning: callstatement is defined without callprotoargument
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y,t,istate = lsoda(f,y,t,tout,rtol,atol,itask,istate,rwork,iwork,jac,jt,[f_extra_args,overwrite_y,jac_extra_args])
+    	Wrote C/API module "lsoda" to file "build/src.linux-x86_64-3.4/scipy/integrate/lsodamodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.integrate._dop" sources
+    f2py options: []
+    f2py: scipy/integrate/dop.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/integrate/dop.pyf' (format:free)
+    Post-processing...
+    	Block: __user__routines
+    			Block: fcn
+    			Block: solout
+    	Block: _dop
+    			Block: dopri5
+    In: scipy/integrate/dop.pyf:_dop:unknown_interface:dopri5
+    get_useparameters: no module __user__routines info used by dopri5
+    			Block: dop853
+    In: scipy/integrate/dop.pyf:_dop:unknown_interface:dop853
+    get_useparameters: no module __user__routines info used by dop853
+    Post-processing (stage 2)...
+    Building modules...
+    	Constructing call-back function "cb_fcn_in___user__routines"
+    	  def fcn(x,y): return f
+    	Constructing call-back function "cb_solout_in___user__routines"
+    	  def solout(nr,xold,x,y,con,icomp,[nd]): return irtn
+    	Building module "_dop"...
+    		Constructing wrapper function "dopri5"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y,iwork,idid = dopri5(fcn,x,y,xend,rtol,atol,solout,iout,work,iwork,[fcn_extra_args,overwrite_y,solout_extra_args])
+    		Constructing wrapper function "dop853"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y,iwork,idid = dop853(fcn,x,y,xend,rtol,atol,solout,iout,work,iwork,[fcn_extra_args,overwrite_y,solout_extra_args])
+    	Wrote C/API module "_dop" to file "build/src.linux-x86_64-3.4/scipy/integrate/_dopmodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.integrate._test_multivariate" sources
+    building extension "scipy.integrate._test_odeint_banded" sources
+    f2py options: []
+    f2py:> build/src.linux-x86_64-3.4/scipy/integrate/_test_odeint_bandedmodule.c
+    Reading fortran codes...
+    	Reading file 'scipy/integrate/tests/banded5x5.f' (format:fix,strict)
+    Post-processing...
+    	Block: _test_odeint_banded
+    			Block: jacobian
+    			Block: getbands
+    			Block: banded5x5
+    			Block: banded5x5_jac
+    			Block: banded5x5_bjac
+    			Block: banded5x5_solve
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "_test_odeint_banded"...
+    		Constructing wrapper function "getbands"...
+    		  jac = getbands()
+    		Constructing wrapper function "banded5x5"...
+    		  banded5x5(t,y,f,[n])
+    		Constructing wrapper function "banded5x5_jac"...
+    		  banded5x5_jac(t,y,ml,mu,jac,[n,nrowpd])
+    		Constructing wrapper function "banded5x5_bjac"...
+    		  banded5x5_bjac(t,y,ml,mu,bjac,[n,nrowpd])
+    		Constructing wrapper function "banded5x5_solve"...
+    		  nst,nfe,nje = banded5x5_solve(y,nsteps,dt,jt)
+    		Constructing COMMON block support for "jac"...
+    		  bands
+    	Wrote C/API module "_test_odeint_banded" to file "build/src.linux-x86_64-3.4/scipy/integrate/_test_odeint_bandedmodule.c"
+    	Fortran 77 wrappers are saved to "build/src.linux-x86_64-3.4/scipy/integrate/_test_odeint_banded-f2pywrappers.f"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+      adding 'build/src.linux-x86_64-3.4/scipy/integrate/_test_odeint_banded-f2pywrappers.f' to sources.
+    building extension "scipy.interpolate.interpnd" sources
+    building extension "scipy.interpolate._ppoly" sources
+    building extension "scipy.interpolate._fitpack" sources
+    building extension "scipy.interpolate.dfitpack" sources
+    creating build/src.linux-x86_64-3.4/scipy/interpolate
+    creating build/src.linux-x86_64-3.4/scipy/interpolate/src
+    f2py options: []
+    f2py: scipy/interpolate/src/fitpack.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/interpolate/src/fitpack.pyf' (format:free)
+    Post-processing...
+    	Block: dfitpack
+    			Block: fpchec
+    			Block: splev
+    			Block: splder
+    			Block: splint
+    			Block: sproot
+    			Block: spalde
+    			Block: curfit
+    			Block: percur
+    			Block: parcur
+    			Block: fpcurf0
+    			Block: fpcurf1
+    			Block: fpcurfm1
+    			Block: bispev
+    			Block: parder
+    			Block: bispeu
+    			Block: pardeu
+    			Block: surfit_smth
+    			Block: surfit_lsq
+    			Block: spherfit_smth
+    			Block: spherfit_lsq
+    			Block: regrid_smth
+    			Block: regrid_smth_spher
+    			Block: dblint
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "dfitpack"...
+    		Constructing wrapper function "fpchec"...
+    		  ier = fpchec(x,t,k)
+    		Constructing wrapper function "splev"...
+    		  y = splev(t,c,k,x,[e])
+    		Constructing wrapper function "splder"...
+    		  y = splder(t,c,k,x,[nu,e])
+    		Creating wrapper for Fortran function "splint"("splint")...
+    		Constructing wrapper function "splint"...
+    		  splint = splint(t,c,k,a,b)
+    		Constructing wrapper function "sproot"...
+    		  zero,m,ier = sproot(t,c,[mest])
+    		Constructing wrapper function "spalde"...
+    		  d,ier = spalde(t,c,k,x)
+    		Constructing wrapper function "curfit"...
+    		  n,c,fp,ier = curfit(iopt,x,y,w,t,wrk,iwrk,[xb,xe,k,s])
+    		Constructing wrapper function "percur"...
+    		  n,c,fp,ier = percur(iopt,x,y,w,t,wrk,iwrk,[k,s])
+    		Constructing wrapper function "parcur"...
+    		  n,c,fp,ier = parcur(iopt,ipar,idim,u,x,w,ub,ue,t,wrk,iwrk,[k,s])
+    		Constructing wrapper function "fpcurf0"...
+    		  x,y,w,xb,xe,k,s,n,t,c,fp,fpint,nrdata,ier = fpcurf0(x,y,k,[w,xb,xe,s,nest])
+    		Constructing wrapper function "fpcurf1"...
+    		  x,y,w,xb,xe,k,s,n,t,c,fp,fpint,nrdata,ier = fpcurf1(x,y,w,xb,xe,k,s,n,t,c,fp,fpint,nrdata,ier,[overwrite_x,overwrite_y,overwrite_w,overwrite_t,overwrite_c,overwrite_fpint,overwrite_nrdata])
+    		Constructing wrapper function "fpcurfm1"...
+    		  x,y,w,xb,xe,k,s,n,t,c,fp,fpint,nrdata,ier = fpcurfm1(x,y,k,t,[w,xb,xe,overwrite_t])
+    		Constructing wrapper function "bispev"...
+    		  z,ier = bispev(tx,ty,c,kx,ky,x,y)
+    		Constructing wrapper function "parder"...
+    		  z,ier = parder(tx,ty,c,kx,ky,nux,nuy,x,y)
+    		Constructing wrapper function "bispeu"...
+    		  z,ier = bispeu(tx,ty,c,kx,ky,x,y)
+    		Constructing wrapper function "pardeu"...
+    		  z,ier = pardeu(tx,ty,c,kx,ky,nux,nuy,x,y)
+    		Constructing wrapper function "surfit_smth"...
+    		  nx,tx,ny,ty,c,fp,wrk1,ier = surfit_smth(x,y,z,[w,xb,xe,yb,ye,kx,ky,s,nxest,nyest,eps,lwrk2])
+    		Constructing wrapper function "surfit_lsq"...
+    		  tx,ty,c,fp,ier = surfit_lsq(x,y,z,tx,ty,[w,xb,xe,yb,ye,kx,ky,eps,lwrk2,overwrite_tx,overwrite_ty])
+    		Constructing wrapper function "spherfit_smth"...
+    		  nt,tt,np,tp,c,fp,ier = spherfit_smth(teta,phi,r,[w,s,eps])
+    		Constructing wrapper function "spherfit_lsq"...
+    		  tt,tp,c,fp,ier = spherfit_lsq(teta,phi,r,tt,tp,[w,eps,overwrite_tt,overwrite_tp])
+    		Constructing wrapper function "regrid_smth"...
+    		  nx,tx,ny,ty,c,fp,ier = regrid_smth(x,y,z,[xb,xe,yb,ye,kx,ky,s])
+    		Constructing wrapper function "regrid_smth_spher"...
+    		  nu,tu,nv,tv,c,fp,ier = regrid_smth_spher(iopt,ider,u,v,r,[r0,r1,s])
+    		Creating wrapper for Fortran function "dblint"("dblint")...
+    		Constructing wrapper function "dblint"...
+    		  dblint = dblint(tx,ty,c,kx,ky,xb,xe,yb,ye)
+    	Wrote C/API module "dfitpack" to file "build/src.linux-x86_64-3.4/scipy/interpolate/src/dfitpackmodule.c"
+    	Fortran 77 wrappers are saved to "build/src.linux-x86_64-3.4/scipy/interpolate/src/dfitpack-f2pywrappers.f"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+      adding 'build/src.linux-x86_64-3.4/scipy/interpolate/src/dfitpack-f2pywrappers.f' to sources.
+    building extension "scipy.interpolate._interpolate" sources
+    building extension "scipy.io.matlab.streams" sources
+    building extension "scipy.io.matlab.mio_utils" sources
+    building extension "scipy.io.matlab.mio5_utils" sources
+    building extension "scipy.linalg._fblas" sources
+    creating build/src.linux-x86_64-3.4/scipy/linalg
+    from_template:> build/src.linux-x86_64-3.4/scipy/linalg/fblas.pyf
+    Including file scipy/linalg/fblas_l1.pyf.src
+    Including file scipy/linalg/fblas_l2.pyf.src
+    Including file scipy/linalg/fblas_l3.pyf.src
+    Mismatch in number of replacements (base <prefix=s,d,c,z>) for <__l1=->. Ignoring.
+    Mismatch in number of replacements (base <prefix6=s,d,c,z,c,z>) for <prefix=s,d,c,z>. Ignoring.
+    creating build/src.linux-x86_64-3.4/build
+    creating build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4
+    creating build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy
+    creating build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/linalg
+    f2py options: []
+    f2py: build/src.linux-x86_64-3.4/scipy/linalg/fblas.pyf
+    Reading fortran codes...
+    	Reading file 'build/src.linux-x86_64-3.4/scipy/linalg/fblas.pyf' (format:free)
+    Post-processing...
+    	Block: _fblas
+    			Block: srotg
+    			Block: drotg
+    			Block: crotg
+    			Block: zrotg
+    			Block: srotmg
+    			Block: drotmg
+    			Block: srot
+    			Block: drot
+    			Block: csrot
+    			Block: zdrot
+    			Block: srotm
+    			Block: drotm
+    			Block: sswap
+    			Block: dswap
+    			Block: cswap
+    			Block: zswap
+    			Block: sscal
+    			Block: dscal
+    			Block: cscal
+    			Block: zscal
+    			Block: csscal
+    			Block: zdscal
+    			Block: scopy
+    			Block: dcopy
+    			Block: ccopy
+    			Block: zcopy
+    			Block: saxpy
+    			Block: daxpy
+    			Block: caxpy
+    			Block: zaxpy
+    			Block: sdot
+    			Block: ddot
+    			Block: cdotu
+    			Block: zdotu
+    			Block: cdotc
+    			Block: zdotc
+    			Block: snrm2
+    			Block: scnrm2
+    			Block: dnrm2
+    			Block: dznrm2
+    			Block: sasum
+    			Block: scasum
+    			Block: dasum
+    			Block: dzasum
+    			Block: isamax
+    			Block: idamax
+    			Block: icamax
+    			Block: izamax
+    			Block: sgemv
+    			Block: dgemv
+    			Block: cgemv
+    			Block: zgemv
+    			Block: ssymv
+    			Block: dsymv
+    			Block: chemv
+    			Block: zhemv
+    			Block: strmv
+    			Block: dtrmv
+    			Block: ctrmv
+    			Block: ztrmv
+    			Block: sger
+    			Block: dger
+    			Block: cgeru
+    			Block: zgeru
+    			Block: cgerc
+    			Block: zgerc
+    			Block: ssyr
+    			Block: dsyr
+    			Block: csyr
+    			Block: zsyr
+    			Block: cher
+    			Block: zher
+    			Block: ssyr2
+    			Block: dsyr2
+    			Block: cher2
+    			Block: zher2
+    			Block: sgemm
+    			Block: dgemm
+    			Block: cgemm
+    			Block: zgemm
+    			Block: ssymm
+    			Block: dsymm
+    			Block: csymm
+    			Block: zsymm
+    			Block: chemm
+    			Block: zhemm
+    			Block: ssyrk
+    			Block: dsyrk
+    			Block: csyrk
+    			Block: zsyrk
+    			Block: cherk
+    			Block: zherk
+    			Block: ssyr2k
+    			Block: dsyr2k
+    			Block: csyr2k
+    			Block: zsyr2k
+    			Block: cher2k
+    			Block: zher2k
+    			Block: strmm
+    			Block: dtrmm
+    			Block: ctrmm
+    			Block: ztrmm
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "_fblas"...
+    		Constructing wrapper function "srotg"...
+    		  c,s = srotg(a,b)
+    		Constructing wrapper function "drotg"...
+    		  c,s = drotg(a,b)
+    		Constructing wrapper function "crotg"...
+    		  c,s = crotg(a,b)
+    		Constructing wrapper function "zrotg"...
+    		  c,s = zrotg(a,b)
+    		Constructing wrapper function "srotmg"...
+    		  param = srotmg(d1,d2,x1,y1)
+    		Constructing wrapper function "drotmg"...
+    		  param = drotmg(d1,d2,x1,y1)
+    		Constructing wrapper function "srot"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y = srot(x,y,c,s,[n,offx,incx,offy,incy,overwrite_x,overwrite_y])
+    		Constructing wrapper function "drot"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y = drot(x,y,c,s,[n,offx,incx,offy,incy,overwrite_x,overwrite_y])
+    		Constructing wrapper function "csrot"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y = csrot(x,y,c,s,[n,offx,incx,offy,incy,overwrite_x,overwrite_y])
+    		Constructing wrapper function "zdrot"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y = zdrot(x,y,c,s,[n,offx,incx,offy,incy,overwrite_x,overwrite_y])
+    		Constructing wrapper function "srotm"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y = srotm(x,y,param,[n,offx,incx,offy,incy,overwrite_x,overwrite_y])
+    		Constructing wrapper function "drotm"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y = drotm(x,y,param,[n,offx,incx,offy,incy,overwrite_x,overwrite_y])
+    		Constructing wrapper function "sswap"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y = sswap(x,y,[n,offx,incx,offy,incy])
+    		Constructing wrapper function "dswap"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y = dswap(x,y,[n,offx,incx,offy,incy])
+    		Constructing wrapper function "cswap"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y = cswap(x,y,[n,offx,incx,offy,incy])
+    		Constructing wrapper function "zswap"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y = zswap(x,y,[n,offx,incx,offy,incy])
+    		Constructing wrapper function "sscal"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x = sscal(a,x,[n,offx,incx])
+    		Constructing wrapper function "dscal"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x = dscal(a,x,[n,offx,incx])
+    		Constructing wrapper function "cscal"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x = cscal(a,x,[n,offx,incx])
+    		Constructing wrapper function "zscal"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x = zscal(a,x,[n,offx,incx])
+    		Constructing wrapper function "csscal"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x = csscal(a,x,[n,offx,incx,overwrite_x])
+    		Constructing wrapper function "zdscal"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x = zdscal(a,x,[n,offx,incx,overwrite_x])
+    		Constructing wrapper function "scopy"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = scopy(x,y,[n,offx,incx,offy,incy])
+    		Constructing wrapper function "dcopy"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = dcopy(x,y,[n,offx,incx,offy,incy])
+    		Constructing wrapper function "ccopy"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = ccopy(x,y,[n,offx,incx,offy,incy])
+    		Constructing wrapper function "zcopy"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = zcopy(x,y,[n,offx,incx,offy,incy])
+    		Constructing wrapper function "saxpy"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  z = saxpy(x,y,[n,a,offx,incx,offy,incy])
+    		Constructing wrapper function "daxpy"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  z = daxpy(x,y,[n,a,offx,incx,offy,incy])
+    		Constructing wrapper function "caxpy"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  z = caxpy(x,y,[n,a,offx,incx,offy,incy])
+    		Constructing wrapper function "zaxpy"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  z = zaxpy(x,y,[n,a,offx,incx,offy,incy])
+    		Creating wrapper for Fortran function "sdot"("wsdot")...
+    		Constructing wrapper function "sdot"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  xy = sdot(x,y,[n,offx,incx,offy,incy])
+    		Creating wrapper for Fortran function "ddot"("ddot")...
+    		Constructing wrapper function "ddot"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  xy = ddot(x,y,[n,offx,incx,offy,incy])
+    		Creating wrapper for Fortran function "cdotu"("wcdotu")...
+    		Constructing wrapper function "cdotu"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  xy = cdotu(x,y,[n,offx,incx,offy,incy])
+    		Creating wrapper for Fortran function "zdotu"("wzdotu")...
+    		Constructing wrapper function "zdotu"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  xy = zdotu(x,y,[n,offx,incx,offy,incy])
+    		Creating wrapper for Fortran function "cdotc"("wcdotc")...
+    		Constructing wrapper function "cdotc"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  xy = cdotc(x,y,[n,offx,incx,offy,incy])
+    		Creating wrapper for Fortran function "zdotc"("wzdotc")...
+    		Constructing wrapper function "zdotc"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  xy = zdotc(x,y,[n,offx,incx,offy,incy])
+    		Creating wrapper for Fortran function "snrm2"("wsnrm2")...
+    		Constructing wrapper function "snrm2"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  n2 = snrm2(x,[n,offx,incx])
+    		Creating wrapper for Fortran function "scnrm2"("wscnrm2")...
+    		Constructing wrapper function "scnrm2"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  n2 = scnrm2(x,[n,offx,incx])
+    		Creating wrapper for Fortran function "dnrm2"("dnrm2")...
+    		Constructing wrapper function "dnrm2"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  n2 = dnrm2(x,[n,offx,incx])
+    		Creating wrapper for Fortran function "dznrm2"("dznrm2")...
+    		Constructing wrapper function "dznrm2"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  n2 = dznrm2(x,[n,offx,incx])
+    		Creating wrapper for Fortran function "sasum"("wsasum")...
+    		Constructing wrapper function "sasum"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  s = sasum(x,[n,offx,incx])
+    		Creating wrapper for Fortran function "scasum"("wscasum")...
+    		Constructing wrapper function "scasum"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  s = scasum(x,[n,offx,incx])
+    		Creating wrapper for Fortran function "dasum"("dasum")...
+    		Constructing wrapper function "dasum"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  s = dasum(x,[n,offx,incx])
+    		Creating wrapper for Fortran function "dzasum"("dzasum")...
+    		Constructing wrapper function "dzasum"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  s = dzasum(x,[n,offx,incx])
+    		Constructing wrapper function "isamax"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  k = isamax(x,[n,offx,incx])
+    		Constructing wrapper function "idamax"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  k = idamax(x,[n,offx,incx])
+    		Constructing wrapper function "icamax"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  k = icamax(x,[n,offx,incx])
+    		Constructing wrapper function "izamax"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  k = izamax(x,[n,offx,incx])
+    		Constructing wrapper function "sgemv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = sgemv(alpha,a,x,[beta,y,offx,incx,offy,incy,trans,overwrite_y])
+    		Constructing wrapper function "dgemv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = dgemv(alpha,a,x,[beta,y,offx,incx,offy,incy,trans,overwrite_y])
+    		Constructing wrapper function "cgemv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = cgemv(alpha,a,x,[beta,y,offx,incx,offy,incy,trans,overwrite_y])
+    		Constructing wrapper function "zgemv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = zgemv(alpha,a,x,[beta,y,offx,incx,offy,incy,trans,overwrite_y])
+    		Constructing wrapper function "ssymv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = ssymv(alpha,a,x,[beta,y,offx,incx,offy,incy,lower,overwrite_y])
+    		Constructing wrapper function "dsymv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = dsymv(alpha,a,x,[beta,y,offx,incx,offy,incy,lower,overwrite_y])
+    		Constructing wrapper function "chemv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = chemv(alpha,a,x,[beta,y,offx,incx,offy,incy,lower,overwrite_y])
+    		Constructing wrapper function "zhemv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  y = zhemv(alpha,a,x,[beta,y,offx,incx,offy,incy,lower,overwrite_y])
+    		Constructing wrapper function "strmv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x = strmv(a,x,[offx,incx,lower,trans,unitdiag,overwrite_x])
+    		Constructing wrapper function "dtrmv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x = dtrmv(a,x,[offx,incx,lower,trans,unitdiag,overwrite_x])
+    		Constructing wrapper function "ctrmv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x = ctrmv(a,x,[offx,incx,lower,trans,unitdiag,overwrite_x])
+    		Constructing wrapper function "ztrmv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x = ztrmv(a,x,[offx,incx,lower,trans,unitdiag,overwrite_x])
+    		Constructing wrapper function "sger"...
+    		  a = sger(alpha,x,y,[incx,incy,a,overwrite_x,overwrite_y,overwrite_a])
+    		Constructing wrapper function "dger"...
+    		  a = dger(alpha,x,y,[incx,incy,a,overwrite_x,overwrite_y,overwrite_a])
+    		Constructing wrapper function "cgeru"...
+    		  a = cgeru(alpha,x,y,[incx,incy,a,overwrite_x,overwrite_y,overwrite_a])
+    		Constructing wrapper function "zgeru"...
+    		  a = zgeru(alpha,x,y,[incx,incy,a,overwrite_x,overwrite_y,overwrite_a])
+    		Constructing wrapper function "cgerc"...
+    		  a = cgerc(alpha,x,y,[incx,incy,a,overwrite_x,overwrite_y,overwrite_a])
+    		Constructing wrapper function "zgerc"...
+    		  a = zgerc(alpha,x,y,[incx,incy,a,overwrite_x,overwrite_y,overwrite_a])
+    		Constructing wrapper function "ssyr"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = ssyr(alpha,x,[lower,incx,offx,n,a,overwrite_a])
+    		Constructing wrapper function "dsyr"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = dsyr(alpha,x,[lower,incx,offx,n,a,overwrite_a])
+    		Constructing wrapper function "csyr"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = csyr(alpha,x,[lower,incx,offx,n,a,overwrite_a])
+    		Constructing wrapper function "zsyr"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = zsyr(alpha,x,[lower,incx,offx,n,a,overwrite_a])
+    		Constructing wrapper function "cher"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = cher(alpha,x,[lower,incx,offx,n,a,overwrite_a])
+    		Constructing wrapper function "zher"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = zher(alpha,x,[lower,incx,offx,n,a,overwrite_a])
+    		Constructing wrapper function "ssyr2"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = ssyr2(alpha,x,y,[lower,incx,offx,incy,offy,n,a,overwrite_a])
+    		Constructing wrapper function "dsyr2"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = dsyr2(alpha,x,y,[lower,incx,offx,incy,offy,n,a,overwrite_a])
+    		Constructing wrapper function "cher2"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = cher2(alpha,x,y,[lower,incx,offx,incy,offy,n,a,overwrite_a])
+    		Constructing wrapper function "zher2"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = zher2(alpha,x,y,[lower,incx,offx,incy,offy,n,a,overwrite_a])
+    		Constructing wrapper function "sgemm"...
+    		  c = sgemm(alpha,a,b,[beta,c,trans_a,trans_b,overwrite_c])
+    		Constructing wrapper function "dgemm"...
+    		  c = dgemm(alpha,a,b,[beta,c,trans_a,trans_b,overwrite_c])
+    		Constructing wrapper function "cgemm"...
+    		  c = cgemm(alpha,a,b,[beta,c,trans_a,trans_b,overwrite_c])
+    		Constructing wrapper function "zgemm"...
+    		  c = zgemm(alpha,a,b,[beta,c,trans_a,trans_b,overwrite_c])
+    		Constructing wrapper function "ssymm"...
+    		  c = ssymm(alpha,a,b,[beta,c,side,lower,overwrite_c])
+    		Constructing wrapper function "dsymm"...
+    		  c = dsymm(alpha,a,b,[beta,c,side,lower,overwrite_c])
+    		Constructing wrapper function "csymm"...
+    		  c = csymm(alpha,a,b,[beta,c,side,lower,overwrite_c])
+    		Constructing wrapper function "zsymm"...
+    		  c = zsymm(alpha,a,b,[beta,c,side,lower,overwrite_c])
+    		Constructing wrapper function "chemm"...
+    		  c = chemm(alpha,a,b,[beta,c,side,lower,overwrite_c])
+    		Constructing wrapper function "zhemm"...
+    		  c = zhemm(alpha,a,b,[beta,c,side,lower,overwrite_c])
+    		Constructing wrapper function "ssyrk"...
+    		  c = ssyrk(alpha,a,[beta,c,trans,lower,overwrite_c])
+    		Constructing wrapper function "dsyrk"...
+    		  c = dsyrk(alpha,a,[beta,c,trans,lower,overwrite_c])
+    		Constructing wrapper function "csyrk"...
+    		  c = csyrk(alpha,a,[beta,c,trans,lower,overwrite_c])
+    		Constructing wrapper function "zsyrk"...
+    		  c = zsyrk(alpha,a,[beta,c,trans,lower,overwrite_c])
+    		Constructing wrapper function "cherk"...
+    		  c = cherk(alpha,a,[beta,c,trans,lower,overwrite_c])
+    		Constructing wrapper function "zherk"...
+    		  c = zherk(alpha,a,[beta,c,trans,lower,overwrite_c])
+    		Constructing wrapper function "ssyr2k"...
+    		  c = ssyr2k(alpha,a,b,[beta,c,trans,lower,overwrite_c])
+    		Constructing wrapper function "dsyr2k"...
+    		  c = dsyr2k(alpha,a,b,[beta,c,trans,lower,overwrite_c])
+    		Constructing wrapper function "csyr2k"...
+    		  c = csyr2k(alpha,a,b,[beta,c,trans,lower,overwrite_c])
+    		Constructing wrapper function "zsyr2k"...
+    		  c = zsyr2k(alpha,a,b,[beta,c,trans,lower,overwrite_c])
+    		Constructing wrapper function "cher2k"...
+    		  c = cher2k(alpha,a,b,[beta,c,trans,lower,overwrite_c])
+    		Constructing wrapper function "zher2k"...
+    		  c = zher2k(alpha,a,b,[beta,c,trans,lower,overwrite_c])
+    		Constructing wrapper function "strmm"...
+    		  b = strmm(alpha,a,b,[side,lower,trans_a,diag,overwrite_b])
+    		Constructing wrapper function "dtrmm"...
+    		  b = dtrmm(alpha,a,b,[side,lower,trans_a,diag,overwrite_b])
+    		Constructing wrapper function "ctrmm"...
+    		  b = ctrmm(alpha,a,b,[side,lower,trans_a,diag,overwrite_b])
+    		Constructing wrapper function "ztrmm"...
+    		  b = ztrmm(alpha,a,b,[side,lower,trans_a,diag,overwrite_b])
+    	Wrote C/API module "_fblas" to file "build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/linalg/_fblasmodule.c"
+    	Fortran 77 wrappers are saved to "build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/linalg/_fblas-f2pywrappers.f"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+      adding 'build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/linalg/_fblas-f2pywrappers.f' to sources.
+    building extension "scipy.linalg._flapack" sources
+    from_template:> build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf
+    Including file scipy/linalg/flapack_user.pyf.src
+    Mismatch in number of replacements (base <prefix2=s,d>) for <__l1=S/D>. Ignoring.
+    Mismatch in number of replacements (base <prefix2c=c,z>) for <__l1=C/Z>. Ignoring.
+    Mismatch in number of replacements (base <prefix2=s,d>) for <__l1=S/D>. Ignoring.
+    Mismatch in number of replacements (base <prefix2c=c,z>) for <__l1=C/Z>. Ignoring.
+    Mismatch in number of replacements (base <prefix2=s,d>) for <__l1=S/D>. Ignoring.
+    Mismatch in number of replacements (base <prefix2=s,d>) for <__l1=S/D>. Ignoring.
+    Mismatch in number of replacements (base <prefix2c=c,z>) for <__l1=C/Z>. Ignoring.
+    Mismatch in number of replacements (base <prefix2c=c,z>) for <__l1=C/Z>. Ignoring.
+    f2py options: []
+    f2py: build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf
+    Reading fortran codes...
+    	Reading file 'build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf' (format:free)
+    Line #5993 in build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:"  char*,char*,char*,int*,int*,complex_float*,int*,complex_float*,int*,float*,float*,int*,int*,float*,int*,float*,complex_float*,int*,complex_float*,float*,int*,int*,int*"
+    	crackline:3: No pattern for line
+    Line #6073 in build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:"  char*,char*,char*,int*,int*,complex_double*,int*,complex_double*,int*,double*,double*,int*,int*,double*,int*,double*,complex_double*,int*,complex_double*,double*,int*,int*,int*"
+    	crackline:3: No pattern for line
+    Line #6282 in build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:"lprotoargument char*,int*,int *,int*,int*,float*,int*,int*,float*,int*,int*"
+    	crackline:3: No pattern for line
+    Line #6315 in build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:"lprotoargument char*,int*,int *,int*,int*,double*,int*,int*,double*,int*,int*"
+    	crackline:3: No pattern for line
+    Line #6348 in build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:"lprotoargument char*,int*,int *,int*,int*,complex_float*,int*,int*,complex_float*,int*,int*"
+    	crackline:3: No pattern for line
+    Line #6381 in build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:"lprotoargument char*,int*,int *,int*,int*,complex_double*,int*,int*,complex_double*,int*,int*"
+    	crackline:3: No pattern for line
+    Post-processing...
+    	Block: _flapack
+    			Block: gees__user__routines
+    					Block: sselect
+    					Block: dselect
+    					Block: cselect
+    					Block: zselect
+    			Block: gges__user__routines
+    					Block: cselect
+    					Block: zselect
+    					Block: sselect
+    					Block: dselect
+    			Block: stgsen
+    			Block: dtgsen
+    			Block: ctgsen
+    			Block: ztgsen
+    			Block: sgges
+    In: build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:_flapack:unknown_interface:sgges
+    get_useparameters: no module gges__user__routines info used by sgges
+    			Block: dgges
+    In: build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:_flapack:unknown_interface:dgges
+    get_useparameters: no module gges__user__routines info used by dgges
+    			Block: cgges
+    In: build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:_flapack:unknown_interface:cgges
+    get_useparameters: no module gges__user__routines info used by cgges
+    			Block: zgges
+    In: build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:_flapack:unknown_interface:zgges
+    get_useparameters: no module gges__user__routines info used by zgges
+    			Block: spbtrf
+    			Block: dpbtrf
+    			Block: cpbtrf
+    			Block: zpbtrf
+    			Block: spbtrs
+    			Block: dpbtrs
+    			Block: cpbtrs
+    			Block: zpbtrs
+    			Block: strtrs
+    			Block: dtrtrs
+    			Block: ctrtrs
+    			Block: ztrtrs
+    			Block: spbsv
+    			Block: dpbsv
+    			Block: cpbsv
+    			Block: zpbsv
+    			Block: sptsv
+    			Block: dptsv
+    			Block: cptsv
+    			Block: zptsv
+    			Block: sgebal
+    			Block: dgebal
+    			Block: cgebal
+    			Block: zgebal
+    			Block: sgehrd
+    			Block: dgehrd
+    			Block: cgehrd
+    			Block: zgehrd
+    			Block: sgehrd_lwork
+    			Block: dgehrd_lwork
+    			Block: cgehrd_lwork
+    			Block: zgehrd_lwork
+    			Block: sorghr
+    			Block: dorghr
+    			Block: sorghr_lwork
+    			Block: dorghr_lwork
+    			Block: cunghr
+    			Block: zunghr
+    			Block: cunghr_lwork
+    			Block: zunghr_lwork
+    			Block: sgbsv
+    			Block: dgbsv
+    			Block: cgbsv
+    			Block: zgbsv
+    			Block: sgtsv
+    			Block: dgtsv
+    			Block: cgtsv
+    			Block: zgtsv
+    			Block: sgesv
+    			Block: dgesv
+    			Block: cgesv
+    			Block: zgesv
+    			Block: sgetrf
+    			Block: dgetrf
+    			Block: cgetrf
+    			Block: zgetrf
+    			Block: sgetrs
+    			Block: dgetrs
+    			Block: cgetrs
+    			Block: zgetrs
+    			Block: sgetri
+    			Block: dgetri
+    			Block: cgetri
+    			Block: zgetri
+    			Block: sgetri_lwork
+    			Block: dgetri_lwork
+    			Block: cgetri_lwork
+    			Block: zgetri_lwork
+    			Block: sgesdd
+    			Block: dgesdd
+    			Block: sgesdd_lwork
+    			Block: dgesdd_lwork
+    			Block: cgesdd
+    			Block: zgesdd
+    			Block: cgesdd_lwork
+    			Block: zgesdd_lwork
+    			Block: sgesvd
+    			Block: dgesvd
+    			Block: sgesvd_lwork
+    			Block: dgesvd_lwork
+    			Block: cgesvd
+    			Block: zgesvd
+    			Block: cgesvd_lwork
+    			Block: zgesvd_lwork
+    			Block: sgelss
+    			Block: dgelss
+    			Block: sgelss_lwork
+    			Block: dgelss_lwork
+    			Block: cgelss
+    			Block: zgelss
+    			Block: slasd4
+    			Block: dlasd4
+    			Block: cgelss_lwork
+    			Block: zgelss_lwork
+    			Block: sgelsy
+    			Block: dgelsy
+    			Block: sgelsy_lwork
+    			Block: dgelsy_lwork
+    			Block: cgelsy
+    			Block: zgelsy
+    			Block: cgelsy_lwork
+    			Block: zgelsy_lwork
+    			Block: sgelsd
+    			Block: dgelsd
+    			Block: sgelsd_lwork
+    			Block: dgelsd_lwork
+    			Block: cgelsd
+    			Block: zgelsd
+    			Block: cgelsd_lwork
+    			Block: zgelsd_lwork
+    			Block: sgeqp3
+    			Block: dgeqp3
+    			Block: cgeqp3
+    			Block: zgeqp3
+    			Block: sgeqrf
+    			Block: dgeqrf
+    			Block: cgeqrf
+    			Block: zgeqrf
+    			Block: sgerqf
+    			Block: dgerqf
+    			Block: cgerqf
+    			Block: zgerqf
+    			Block: sorgqr
+    			Block: dorgqr
+    			Block: cungqr
+    			Block: zungqr
+    			Block: sormqr
+    			Block: dormqr
+    			Block: cunmqr
+    			Block: zunmqr
+    			Block: sorgrq
+    			Block: dorgrq
+    			Block: cungrq
+    			Block: zungrq
+    			Block: sgeev
+    			Block: dgeev
+    			Block: sgeev_lwork
+    			Block: dgeev_lwork
+    			Block: cgeev
+    			Block: zgeev
+    			Block: cgeev_lwork
+    			Block: zgeev_lwork
+    			Block: sgegv
+    			Block: dgegv
+    			Block: cgegv
+    			Block: zgegv
+    			Block: ssyev
+    			Block: dsyev
+    			Block: cheev
+    			Block: zheev
+    			Block: ssyevd
+    			Block: dsyevd
+    			Block: cheevd
+    			Block: zheevd
+    			Block: sposv
+    			Block: dposv
+    			Block: cposv
+    			Block: zposv
+    			Block: spotrf
+    			Block: dpotrf
+    			Block: cpotrf
+    			Block: zpotrf
+    			Block: spotrs
+    			Block: dpotrs
+    			Block: cpotrs
+    			Block: zpotrs
+    			Block: spotri
+    			Block: dpotri
+    			Block: cpotri
+    			Block: zpotri
+    			Block: slauum
+    			Block: dlauum
+    			Block: clauum
+    			Block: zlauum
+    			Block: strtri
+    			Block: dtrtri
+    			Block: ctrtri
+    			Block: ztrtri
+    			Block: strsyl
+    			Block: dtrsyl
+    			Block: ctrsyl
+    			Block: ztrsyl
+    			Block: slaswp
+    			Block: dlaswp
+    			Block: claswp
+    			Block: zlaswp
+    			Block: cgees
+    In: build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:_flapack:unknown_interface:cgees
+    get_useparameters: no module gees__user__routines info used by cgees
+    			Block: zgees
+    In: build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:_flapack:unknown_interface:zgees
+    get_useparameters: no module gees__user__routines info used by zgees
+    			Block: sgees
+    In: build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:_flapack:unknown_interface:sgees
+    get_useparameters: no module gees__user__routines info used by sgees
+    			Block: dgees
+    In: build/src.linux-x86_64-3.4/scipy/linalg/flapack.pyf:_flapack:unknown_interface:dgees
+    get_useparameters: no module gees__user__routines info used by dgees
+    			Block: sggev
+    			Block: dggev
+    			Block: cggev
+    			Block: zggev
+    			Block: ssbev
+    			Block: dsbev
+    			Block: ssbevd
+    			Block: dsbevd
+    			Block: ssbevx
+    			Block: dsbevx
+    			Block: chbevd
+    			Block: zhbevd
+    			Block: chbevx
+    			Block: zhbevx
+    			Block: dlamch
+    			Block: slamch
+    			Block: sgbtrf
+    			Block: dgbtrf
+    			Block: cgbtrf
+    			Block: zgbtrf
+    			Block: sgbtrs
+    			Block: dgbtrs
+    			Block: cgbtrs
+    			Block: zgbtrs
+    			Block: ssyevr
+    			Block: dsyevr
+    			Block: cheevr
+    			Block: zheevr
+    			Block: ssygv
+    			Block: dsygv
+    			Block: chegv
+    			Block: zhegv
+    			Block: ssygvd
+    			Block: dsygvd
+    			Block: chegvd
+    			Block: zhegvd
+    			Block: ssygvx
+    			Block: dsygvx
+    			Block: chegvx
+    			Block: zhegvx
+    			Block: slange
+    			Block: dlange
+    			Block: clange
+    			Block: zlange
+    			Block: slarfg
+    			Block: dlarfg
+    			Block: clarfg
+    			Block: zlarfg
+    			Block: slarf
+    			Block: dlarf
+    			Block: clarf
+    			Block: zlarf
+    			Block: slartg
+    			Block: dlartg
+    			Block: clartg
+    			Block: zlartg
+    			Block: crot
+    			Block: zrot
+    			Block: ilaver
+    Post-processing (stage 2)...
+    Building modules...
+    	Constructing call-back function "cb_sselect_in_gees__user__routines"
+    	  def sselect(arg1,arg2): return sselect
+    	Constructing call-back function "cb_dselect_in_gees__user__routines"
+    	  def dselect(arg1,arg2): return dselect
+    	Constructing call-back function "cb_cselect_in_gees__user__routines"
+    	  def cselect(arg): return cselect
+    	Constructing call-back function "cb_zselect_in_gees__user__routines"
+    	  def zselect(arg): return zselect
+    	Constructing call-back function "cb_cselect_in_gges__user__routines"
+    	  def cselect(alpha,beta): return cselect
+    	Constructing call-back function "cb_zselect_in_gges__user__routines"
+    	  def zselect(alpha,beta): return zselect
+    	Constructing call-back function "cb_sselect_in_gges__user__routines"
+    	  def sselect(alphar,alphai,beta): return sselect
+    	Constructing call-back function "cb_dselect_in_gges__user__routines"
+    	  def dselect(alphar,alphai,beta): return dselect
+    	Building module "_flapack"...
+    		Constructing wrapper function "stgsen"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a,b,alphar,alphai,beta,q,z,m,pl,pr,dif,work,iwork,info = stgsen(select,a,b,q,z,[lwork,liwork,overwrite_a,overwrite_b,overwrite_q,overwrite_z])
+    		Constructing wrapper function "dtgsen"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a,b,alphar,alphai,beta,q,z,m,pl,pr,dif,work,iwork,info = dtgsen(select,a,b,q,z,[lwork,liwork,overwrite_a,overwrite_b,overwrite_q,overwrite_z])
+    		Constructing wrapper function "ctgsen"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a,b,alpha,beta,q,z,m,pl,pr,dif,work,iwork,info = ctgsen(select,a,b,q,z,[lwork,liwork,overwrite_a,overwrite_b,overwrite_q,overwrite_z])
+    		Constructing wrapper function "ztgsen"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a,b,alpha,beta,q,z,m,pl,pr,dif,work,iwork,info = ztgsen(select,a,b,q,z,[lwork,liwork,overwrite_a,overwrite_b,overwrite_q,overwrite_z])
+    		Constructing wrapper function "sgges"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a,b,sdim,alphar,alphai,beta,vsl,vsr,work,info = sgges(sselect,a,b,[jobvsl,jobvsr,sort_t,ldvsl,ldvsr,lwork,sselect_extra_args,overwrite_a,overwrite_b])
+    		Constructing wrapper function "dgges"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a,b,sdim,alphar,alphai,beta,vsl,vsr,work,info = dgges(dselect,a,b,[jobvsl,jobvsr,sort_t,ldvsl,ldvsr,lwork,dselect_extra_args,overwrite_a,overwrite_b])
+    		Constructing wrapper function "cgges"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a,b,sdim,alpha,beta,vsl,vsr,work,info = cgges(cselect,a,b,[jobvsl,jobvsr,sort_t,ldvsl,ldvsr,lwork,cselect_extra_args,overwrite_a,overwrite_b])
+    		Constructing wrapper function "zgges"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a,b,sdim,alpha,beta,vsl,vsr,work,info = zgges(zselect,a,b,[jobvsl,jobvsr,sort_t,ldvsl,ldvsr,lwork,zselect_extra_args,overwrite_a,overwrite_b])
+    		Constructing wrapper function "spbtrf"...
+    		  c,info = spbtrf(ab,[lower,ldab,overwrite_ab])
+    		Constructing wrapper function "dpbtrf"...
+    		  c,info = dpbtrf(ab,[lower,ldab,overwrite_ab])
+    		Constructing wrapper function "cpbtrf"...
+    		  c,info = cpbtrf(ab,[lower,ldab,overwrite_ab])
+    		Constructing wrapper function "zpbtrf"...
+    		  c,info = zpbtrf(ab,[lower,ldab,overwrite_ab])
+    		Constructing wrapper function "spbtrs"...
+    		  x,info = spbtrs(ab,b,[lower,ldab,overwrite_b])
+    		Constructing wrapper function "dpbtrs"...
+    		  x,info = dpbtrs(ab,b,[lower,ldab,overwrite_b])
+    		Constructing wrapper function "cpbtrs"...
+    		  x,info = cpbtrs(ab,b,[lower,ldab,overwrite_b])
+    		Constructing wrapper function "zpbtrs"...
+    		  x,info = zpbtrs(ab,b,[lower,ldab,overwrite_b])
+    		Constructing wrapper function "strtrs"...
+    		  x,info = strtrs(a,b,[lower,trans,unitdiag,lda,overwrite_b])
+    		Constructing wrapper function "dtrtrs"...
+    		  x,info = dtrtrs(a,b,[lower,trans,unitdiag,lda,overwrite_b])
+    		Constructing wrapper function "ctrtrs"...
+    		  x,info = ctrtrs(a,b,[lower,trans,unitdiag,lda,overwrite_b])
+    		Constructing wrapper function "ztrtrs"...
+    		  x,info = ztrtrs(a,b,[lower,trans,unitdiag,lda,overwrite_b])
+    		Constructing wrapper function "spbsv"...
+    		  c,x,info = spbsv(ab,b,[lower,ldab,overwrite_ab,overwrite_b])
+    		Constructing wrapper function "dpbsv"...
+    		  c,x,info = dpbsv(ab,b,[lower,ldab,overwrite_ab,overwrite_b])
+    		Constructing wrapper function "cpbsv"...
+    		  c,x,info = cpbsv(ab,b,[lower,ldab,overwrite_ab,overwrite_b])
+    		Constructing wrapper function "zpbsv"...
+    		  c,x,info = zpbsv(ab,b,[lower,ldab,overwrite_ab,overwrite_b])
+    		Constructing wrapper function "sptsv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  d,du,x,info = sptsv(d,e,b,[overwrite_d,overwrite_e,overwrite_b])
+    		Constructing wrapper function "dptsv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  d,du,x,info = dptsv(d,e,b,[overwrite_d,overwrite_e,overwrite_b])
+    		Constructing wrapper function "cptsv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  d,du,x,info = cptsv(d,e,b,[overwrite_d,overwrite_e,overwrite_b])
+    		Constructing wrapper function "zptsv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  d,du,x,info = zptsv(d,e,b,[overwrite_d,overwrite_e,overwrite_b])
+    		Constructing wrapper function "sgebal"...
+    		  ba,lo,hi,pivscale,info = sgebal(a,[scale,permute,overwrite_a])
+    		Constructing wrapper function "dgebal"...
+    		  ba,lo,hi,pivscale,info = dgebal(a,[scale,permute,overwrite_a])
+    		Constructing wrapper function "cgebal"...
+    		  ba,lo,hi,pivscale,info = cgebal(a,[scale,permute,overwrite_a])
+    		Constructing wrapper function "zgebal"...
+    		  ba,lo,hi,pivscale,info = zgebal(a,[scale,permute,overwrite_a])
+    		Constructing wrapper function "sgehrd"...
+    		  ht,tau,info = sgehrd(a,[lo,hi,lwork,overwrite_a])
+    		Constructing wrapper function "dgehrd"...
+    		  ht,tau,info = dgehrd(a,[lo,hi,lwork,overwrite_a])
+    		Constructing wrapper function "cgehrd"...
+    		  ht,tau,info = cgehrd(a,[lo,hi,lwork,overwrite_a])
+    		Constructing wrapper function "zgehrd"...
+    		  ht,tau,info = zgehrd(a,[lo,hi,lwork,overwrite_a])
+    		Constructing wrapper function "sgehrd_lwork"...
+    		  work,info = sgehrd_lwork(n,[lo,hi])
+    		Constructing wrapper function "dgehrd_lwork"...
+    		  work,info = dgehrd_lwork(n,[lo,hi])
+    		Constructing wrapper function "cgehrd_lwork"...
+    		  work,info = cgehrd_lwork(n,[lo,hi])
+    		Constructing wrapper function "zgehrd_lwork"...
+    		  work,info = zgehrd_lwork(n,[lo,hi])
+    		Constructing wrapper function "sorghr"...
+    		  ht,info = sorghr(a,tau,[lo,hi,lwork,overwrite_a])
+    		Constructing wrapper function "dorghr"...
+    		  ht,info = dorghr(a,tau,[lo,hi,lwork,overwrite_a])
+    		Constructing wrapper function "sorghr_lwork"...
+    warning: callstatement is defined without callprotoargument
+    		  work,info = sorghr_lwork(n,[lo,hi])
+    		Constructing wrapper function "dorghr_lwork"...
+    warning: callstatement is defined without callprotoargument
+    		  work,info = dorghr_lwork(n,[lo,hi])
+    		Constructing wrapper function "cunghr"...
+    		  ht,info = cunghr(a,tau,[lo,hi,lwork,overwrite_a])
+    		Constructing wrapper function "zunghr"...
+    		  ht,info = zunghr(a,tau,[lo,hi,lwork,overwrite_a])
+    		Constructing wrapper function "cunghr_lwork"...
+    warning: callstatement is defined without callprotoargument
+    		  work,info = cunghr_lwork(n,[lo,hi])
+    		Constructing wrapper function "zunghr_lwork"...
+    warning: callstatement is defined without callprotoargument
+    		  work,info = zunghr_lwork(n,[lo,hi])
+    		Constructing wrapper function "sgbsv"...
+    		  lub,piv,x,info = sgbsv(kl,ku,ab,b,[overwrite_ab,overwrite_b])
+    		Constructing wrapper function "dgbsv"...
+    		  lub,piv,x,info = dgbsv(kl,ku,ab,b,[overwrite_ab,overwrite_b])
+    		Constructing wrapper function "cgbsv"...
+    		  lub,piv,x,info = cgbsv(kl,ku,ab,b,[overwrite_ab,overwrite_b])
+    		Constructing wrapper function "zgbsv"...
+    		  lub,piv,x,info = zgbsv(kl,ku,ab,b,[overwrite_ab,overwrite_b])
+    		Constructing wrapper function "sgtsv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  du2,d,du,x,info = sgtsv(dl,d,du,b,[overwrite_dl,overwrite_d,overwrite_du,overwrite_b])
+    		Constructing wrapper function "dgtsv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  du2,d,du,x,info = dgtsv(dl,d,du,b,[overwrite_dl,overwrite_d,overwrite_du,overwrite_b])
+    		Constructing wrapper function "cgtsv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  du2,d,du,x,info = cgtsv(dl,d,du,b,[overwrite_dl,overwrite_d,overwrite_du,overwrite_b])
+    		Constructing wrapper function "zgtsv"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  du2,d,du,x,info = zgtsv(dl,d,du,b,[overwrite_dl,overwrite_d,overwrite_du,overwrite_b])
+    		Constructing wrapper function "sgesv"...
+    		  lu,piv,x,info = sgesv(a,b,[overwrite_a,overwrite_b])
+    		Constructing wrapper function "dgesv"...
+    		  lu,piv,x,info = dgesv(a,b,[overwrite_a,overwrite_b])
+    		Constructing wrapper function "cgesv"...
+    		  lu,piv,x,info = cgesv(a,b,[overwrite_a,overwrite_b])
+    		Constructing wrapper function "zgesv"...
+    		  lu,piv,x,info = zgesv(a,b,[overwrite_a,overwrite_b])
+    		Constructing wrapper function "sgetrf"...
+    		  lu,piv,info = sgetrf(a,[overwrite_a])
+    		Constructing wrapper function "dgetrf"...
+    		  lu,piv,info = dgetrf(a,[overwrite_a])
+    		Constructing wrapper function "cgetrf"...
+    		  lu,piv,info = cgetrf(a,[overwrite_a])
+    		Constructing wrapper function "zgetrf"...
+    		  lu,piv,info = zgetrf(a,[overwrite_a])
+    		Constructing wrapper function "sgetrs"...
+    		  x,info = sgetrs(lu,piv,b,[trans,overwrite_b])
+    		Constructing wrapper function "dgetrs"...
+    		  x,info = dgetrs(lu,piv,b,[trans,overwrite_b])
+    		Constructing wrapper function "cgetrs"...
+    		  x,info = cgetrs(lu,piv,b,[trans,overwrite_b])
+    		Constructing wrapper function "zgetrs"...
+    		  x,info = zgetrs(lu,piv,b,[trans,overwrite_b])
+    		Constructing wrapper function "sgetri"...
+    		  inv_a,info = sgetri(lu,piv,[lwork,overwrite_lu])
+    		Constructing wrapper function "dgetri"...
+    		  inv_a,info = dgetri(lu,piv,[lwork,overwrite_lu])
+    		Constructing wrapper function "cgetri"...
+    		  inv_a,info = cgetri(lu,piv,[lwork,overwrite_lu])
+    		Constructing wrapper function "zgetri"...
+    		  inv_a,info = zgetri(lu,piv,[lwork,overwrite_lu])
+    		Constructing wrapper function "sgetri_lwork"...
+    		  work,info = sgetri_lwork(n)
+    		Constructing wrapper function "dgetri_lwork"...
+    		  work,info = dgetri_lwork(n)
+    		Constructing wrapper function "cgetri_lwork"...
+    		  work,info = cgetri_lwork(n)
+    		Constructing wrapper function "zgetri_lwork"...
+    		  work,info = zgetri_lwork(n)
+    		Constructing wrapper function "sgesdd"...
+    		  u,s,vt,info = sgesdd(a,[compute_uv,full_matrices,lwork,overwrite_a])
+    		Constructing wrapper function "dgesdd"...
+    		  u,s,vt,info = dgesdd(a,[compute_uv,full_matrices,lwork,overwrite_a])
+    		Constructing wrapper function "sgesdd_lwork"...
+    		  work,info = sgesdd_lwork(m,n,[compute_uv,full_matrices])
+    		Constructing wrapper function "dgesdd_lwork"...
+    		  work,info = dgesdd_lwork(m,n,[compute_uv,full_matrices])
+    		Constructing wrapper function "cgesdd"...
+    		  u,s,vt,info = cgesdd(a,[compute_uv,full_matrices,lwork,overwrite_a])
+    		Constructing wrapper function "zgesdd"...
+    		  u,s,vt,info = zgesdd(a,[compute_uv,full_matrices,lwork,overwrite_a])
+    		Constructing wrapper function "cgesdd_lwork"...
+    		  work,info = cgesdd_lwork(m,n,[compute_uv,full_matrices])
+    		Constructing wrapper function "zgesdd_lwork"...
+    		  work,info = zgesdd_lwork(m,n,[compute_uv,full_matrices])
+    		Constructing wrapper function "sgesvd"...
+    		  u,s,vt,info = sgesvd(a,[compute_uv,full_matrices,lwork,overwrite_a])
+    		Constructing wrapper function "dgesvd"...
+    		  u,s,vt,info = dgesvd(a,[compute_uv,full_matrices,lwork,overwrite_a])
+    		Constructing wrapper function "sgesvd_lwork"...
+    		  work,info = sgesvd_lwork(m,n,[compute_uv,full_matrices])
+    		Constructing wrapper function "dgesvd_lwork"...
+    		  work,info = dgesvd_lwork(m,n,[compute_uv,full_matrices])
+    		Constructing wrapper function "cgesvd"...
+    		  u,s,vt,info = cgesvd(a,[compute_uv,full_matrices,lwork,overwrite_a])
+    		Constructing wrapper function "zgesvd"...
+    		  u,s,vt,info = zgesvd(a,[compute_uv,full_matrices,lwork,overwrite_a])
+    		Constructing wrapper function "cgesvd_lwork"...
+    		  work,info = cgesvd_lwork(m,n,[compute_uv,full_matrices])
+    		Constructing wrapper function "zgesvd_lwork"...
+    		  work,info = zgesvd_lwork(m,n,[compute_uv,full_matrices])
+    		Constructing wrapper function "sgelss"...
+    		  v,x,s,rank,work,info = sgelss(a,b,[cond,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "dgelss"...
+    		  v,x,s,rank,work,info = dgelss(a,b,[cond,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "sgelss_lwork"...
+    		  work,info = sgelss_lwork(m,n,nrhs,[cond,lwork])
+    		Constructing wrapper function "dgelss_lwork"...
+    		  work,info = dgelss_lwork(m,n,nrhs,[cond,lwork])
+    		Constructing wrapper function "cgelss"...
+    		  v,x,s,rank,work,info = cgelss(a,b,[cond,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "zgelss"...
+    		  v,x,s,rank,work,info = zgelss(a,b,[cond,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "slasd4"...
+    		  delta,sigma,work,info = slasd4(i,d,z,[rho])
+    		Constructing wrapper function "dlasd4"...
+    		  delta,sigma,work,info = dlasd4(i,d,z,[rho])
+    		Constructing wrapper function "cgelss_lwork"...
+    		  work,info = cgelss_lwork(m,n,nrhs,[cond,lwork])
+    		Constructing wrapper function "zgelss_lwork"...
+    		  work,info = zgelss_lwork(m,n,nrhs,[cond,lwork])
+    		Constructing wrapper function "sgelsy"...
+    		  v,x,j,rank,info = sgelsy(a,b,jptv,cond,lwork,[overwrite_a,overwrite_b])
+    		Constructing wrapper function "dgelsy"...
+    		  v,x,j,rank,info = dgelsy(a,b,jptv,cond,lwork,[overwrite_a,overwrite_b])
+    		Constructing wrapper function "sgelsy_lwork"...
+    		  work,info = sgelsy_lwork(m,n,nrhs,cond,[lwork])
+    		Constructing wrapper function "dgelsy_lwork"...
+    		  work,info = dgelsy_lwork(m,n,nrhs,cond,[lwork])
+    		Constructing wrapper function "cgelsy"...
+    		  v,x,j,rank,info = cgelsy(a,b,jptv,cond,lwork,[overwrite_a,overwrite_b])
+    		Constructing wrapper function "zgelsy"...
+    		  v,x,j,rank,info = zgelsy(a,b,jptv,cond,lwork,[overwrite_a,overwrite_b])
+    		Constructing wrapper function "cgelsy_lwork"...
+    		  work,info = cgelsy_lwork(m,n,nrhs,cond,[lwork])
+    		Constructing wrapper function "zgelsy_lwork"...
+    		  work,info = zgelsy_lwork(m,n,nrhs,cond,[lwork])
+    		Constructing wrapper function "sgelsd"...
+    		  x,s,rank,info = sgelsd(a,b,lwork,size_iwork,[cond,overwrite_a,overwrite_b])
+    		Constructing wrapper function "dgelsd"...
+    		  x,s,rank,info = dgelsd(a,b,lwork,size_iwork,[cond,overwrite_a,overwrite_b])
+    		Constructing wrapper function "sgelsd_lwork"...
+    		  work,iwork,info = sgelsd_lwork(m,n,nrhs,[cond,lwork])
+    		Constructing wrapper function "dgelsd_lwork"...
+    		  work,iwork,info = dgelsd_lwork(m,n,nrhs,[cond,lwork])
+    		Constructing wrapper function "cgelsd"...
+    		  x,s,rank,info = cgelsd(a,b,lwork,size_rwork,size_iwork,[cond,overwrite_a,overwrite_b])
+    		Constructing wrapper function "zgelsd"...
+    		  x,s,rank,info = zgelsd(a,b,lwork,size_rwork,size_iwork,[cond,overwrite_a,overwrite_b])
+    		Constructing wrapper function "cgelsd_lwork"...
+    		  work,rwork,iwork,info = cgelsd_lwork(m,n,nrhs,[cond,lwork])
+    		Constructing wrapper function "zgelsd_lwork"...
+    		  work,rwork,iwork,info = zgelsd_lwork(m,n,nrhs,[cond,lwork])
+    		Constructing wrapper function "sgeqp3"...
+    		  qr,jpvt,tau,work,info = sgeqp3(a,[lwork,overwrite_a])
+    		Constructing wrapper function "dgeqp3"...
+    		  qr,jpvt,tau,work,info = dgeqp3(a,[lwork,overwrite_a])
+    		Constructing wrapper function "cgeqp3"...
+    		  qr,jpvt,tau,work,info = cgeqp3(a,[lwork,overwrite_a])
+    		Constructing wrapper function "zgeqp3"...
+    		  qr,jpvt,tau,work,info = zgeqp3(a,[lwork,overwrite_a])
+    		Constructing wrapper function "sgeqrf"...
+    		  qr,tau,work,info = sgeqrf(a,[lwork,overwrite_a])
+    		Constructing wrapper function "dgeqrf"...
+    		  qr,tau,work,info = dgeqrf(a,[lwork,overwrite_a])
+    		Constructing wrapper function "cgeqrf"...
+    		  qr,tau,work,info = cgeqrf(a,[lwork,overwrite_a])
+    		Constructing wrapper function "zgeqrf"...
+    		  qr,tau,work,info = zgeqrf(a,[lwork,overwrite_a])
+    		Constructing wrapper function "sgerqf"...
+    		  qr,tau,work,info = sgerqf(a,[lwork,overwrite_a])
+    		Constructing wrapper function "dgerqf"...
+    		  qr,tau,work,info = dgerqf(a,[lwork,overwrite_a])
+    		Constructing wrapper function "cgerqf"...
+    		  qr,tau,work,info = cgerqf(a,[lwork,overwrite_a])
+    		Constructing wrapper function "zgerqf"...
+    		  qr,tau,work,info = zgerqf(a,[lwork,overwrite_a])
+    		Constructing wrapper function "sorgqr"...
+    		  q,work,info = sorgqr(a,tau,[lwork,overwrite_a])
+    		Constructing wrapper function "dorgqr"...
+    		  q,work,info = dorgqr(a,tau,[lwork,overwrite_a])
+    		Constructing wrapper function "cungqr"...
+    		  q,work,info = cungqr(a,tau,[lwork,overwrite_a])
+    		Constructing wrapper function "zungqr"...
+    		  q,work,info = zungqr(a,tau,[lwork,overwrite_a])
+    		Constructing wrapper function "sormqr"...
+    		  cq,work,info = sormqr(side,trans,a,tau,c,lwork,[overwrite_c])
+    		Constructing wrapper function "dormqr"...
+    		  cq,work,info = dormqr(side,trans,a,tau,c,lwork,[overwrite_c])
+    		Constructing wrapper function "cunmqr"...
+    		  cq,work,info = cunmqr(side,trans,a,tau,c,lwork,[overwrite_c])
+    		Constructing wrapper function "zunmqr"...
+    		  cq,work,info = zunmqr(side,trans,a,tau,c,lwork,[overwrite_c])
+    		Constructing wrapper function "sorgrq"...
+    		  q,work,info = sorgrq(a,tau,[lwork,overwrite_a])
+    		Constructing wrapper function "dorgrq"...
+    		  q,work,info = dorgrq(a,tau,[lwork,overwrite_a])
+    		Constructing wrapper function "cungrq"...
+    		  q,work,info = cungrq(a,tau,[lwork,overwrite_a])
+    		Constructing wrapper function "zungrq"...
+    		  q,work,info = zungrq(a,tau,[lwork,overwrite_a])
+    		Constructing wrapper function "sgeev"...
+    		  wr,wi,vl,vr,info = sgeev(a,[compute_vl,compute_vr,lwork,overwrite_a])
+    		Constructing wrapper function "dgeev"...
+    		  wr,wi,vl,vr,info = dgeev(a,[compute_vl,compute_vr,lwork,overwrite_a])
+    		Constructing wrapper function "sgeev_lwork"...
+    		  work,info = sgeev_lwork(n,[compute_vl,compute_vr])
+    		Constructing wrapper function "dgeev_lwork"...
+    		  work,info = dgeev_lwork(n,[compute_vl,compute_vr])
+    		Constructing wrapper function "cgeev"...
+    		  w,vl,vr,info = cgeev(a,[compute_vl,compute_vr,lwork,overwrite_a])
+    		Constructing wrapper function "zgeev"...
+    		  w,vl,vr,info = zgeev(a,[compute_vl,compute_vr,lwork,overwrite_a])
+    		Constructing wrapper function "cgeev_lwork"...
+    		  work,info = cgeev_lwork(n,[compute_vl,compute_vr])
+    		Constructing wrapper function "zgeev_lwork"...
+    		  work,info = zgeev_lwork(n,[compute_vl,compute_vr])
+    		Constructing wrapper function "sgegv"...
+    		  alphar,alphai,beta,vl,vr,info = sgegv(a,b,[compute_vl,compute_vr,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "dgegv"...
+    		  alphar,alphai,beta,vl,vr,info = dgegv(a,b,[compute_vl,compute_vr,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "cgegv"...
+    		  alpha,beta,vl,vr,info = cgegv(a,b,[compute_vl,compute_vr,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "zgegv"...
+    		  alpha,beta,vl,vr,info = zgegv(a,b,[compute_vl,compute_vr,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "ssyev"...
+    		  w,v,info = ssyev(a,[compute_v,lower,lwork,overwrite_a])
+    		Constructing wrapper function "dsyev"...
+    		  w,v,info = dsyev(a,[compute_v,lower,lwork,overwrite_a])
+    		Constructing wrapper function "cheev"...
+    		  w,v,info = cheev(a,[compute_v,lower,lwork,overwrite_a])
+    		Constructing wrapper function "zheev"...
+    		  w,v,info = zheev(a,[compute_v,lower,lwork,overwrite_a])
+    		Constructing wrapper function "ssyevd"...
+    		  w,v,info = ssyevd(a,[compute_v,lower,lwork,overwrite_a])
+    		Constructing wrapper function "dsyevd"...
+    		  w,v,info = dsyevd(a,[compute_v,lower,lwork,overwrite_a])
+    		Constructing wrapper function "cheevd"...
+    		  w,v,info = cheevd(a,[compute_v,lower,lwork,overwrite_a])
+    		Constructing wrapper function "zheevd"...
+    		  w,v,info = zheevd(a,[compute_v,lower,lwork,overwrite_a])
+    		Constructing wrapper function "sposv"...
+    		  c,x,info = sposv(a,b,[lower,overwrite_a,overwrite_b])
+    		Constructing wrapper function "dposv"...
+    		  c,x,info = dposv(a,b,[lower,overwrite_a,overwrite_b])
+    		Constructing wrapper function "cposv"...
+    		  c,x,info = cposv(a,b,[lower,overwrite_a,overwrite_b])
+    		Constructing wrapper function "zposv"...
+    		  c,x,info = zposv(a,b,[lower,overwrite_a,overwrite_b])
+    		Constructing wrapper function "spotrf"...
+    		  c,info = spotrf(a,[lower,clean,overwrite_a])
+    		Constructing wrapper function "dpotrf"...
+    		  c,info = dpotrf(a,[lower,clean,overwrite_a])
+    		Constructing wrapper function "cpotrf"...
+    		  c,info = cpotrf(a,[lower,clean,overwrite_a])
+    		Constructing wrapper function "zpotrf"...
+    		  c,info = zpotrf(a,[lower,clean,overwrite_a])
+    		Constructing wrapper function "spotrs"...
+    		  x,info = spotrs(c,b,[lower,overwrite_b])
+    		Constructing wrapper function "dpotrs"...
+    		  x,info = dpotrs(c,b,[lower,overwrite_b])
+    		Constructing wrapper function "cpotrs"...
+    		  x,info = cpotrs(c,b,[lower,overwrite_b])
+    		Constructing wrapper function "zpotrs"...
+    		  x,info = zpotrs(c,b,[lower,overwrite_b])
+    		Constructing wrapper function "spotri"...
+    		  inv_a,info = spotri(c,[lower,overwrite_c])
+    		Constructing wrapper function "dpotri"...
+    		  inv_a,info = dpotri(c,[lower,overwrite_c])
+    		Constructing wrapper function "cpotri"...
+    		  inv_a,info = cpotri(c,[lower,overwrite_c])
+    		Constructing wrapper function "zpotri"...
+    		  inv_a,info = zpotri(c,[lower,overwrite_c])
+    		Constructing wrapper function "slauum"...
+    		  a,info = slauum(c,[lower,overwrite_c])
+    		Constructing wrapper function "dlauum"...
+    		  a,info = dlauum(c,[lower,overwrite_c])
+    		Constructing wrapper function "clauum"...
+    		  a,info = clauum(c,[lower,overwrite_c])
+    		Constructing wrapper function "zlauum"...
+    		  a,info = zlauum(c,[lower,overwrite_c])
+    		Constructing wrapper function "strtri"...
+    		  inv_c,info = strtri(c,[lower,unitdiag,overwrite_c])
+    		Constructing wrapper function "dtrtri"...
+    		  inv_c,info = dtrtri(c,[lower,unitdiag,overwrite_c])
+    		Constructing wrapper function "ctrtri"...
+    		  inv_c,info = ctrtri(c,[lower,unitdiag,overwrite_c])
+    		Constructing wrapper function "ztrtri"...
+    		  inv_c,info = ztrtri(c,[lower,unitdiag,overwrite_c])
+    		Constructing wrapper function "strsyl"...
+    		  x,scale,info = strsyl(a,b,c,[trana,tranb,isgn,overwrite_c])
+    		Constructing wrapper function "dtrsyl"...
+    		  x,scale,info = dtrsyl(a,b,c,[trana,tranb,isgn,overwrite_c])
+    		Constructing wrapper function "ctrsyl"...
+    		  x,scale,info = ctrsyl(a,b,c,[trana,tranb,isgn,overwrite_c])
+    		Constructing wrapper function "ztrsyl"...
+    		  x,scale,info = ztrsyl(a,b,c,[trana,tranb,isgn,overwrite_c])
+    		Constructing wrapper function "slaswp"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = slaswp(a,piv,[k1,k2,off,inc,overwrite_a])
+    		Constructing wrapper function "dlaswp"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = dlaswp(a,piv,[k1,k2,off,inc,overwrite_a])
+    		Constructing wrapper function "claswp"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = claswp(a,piv,[k1,k2,off,inc,overwrite_a])
+    		Constructing wrapper function "zlaswp"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  a = zlaswp(a,piv,[k1,k2,off,inc,overwrite_a])
+    		Constructing wrapper function "cgees"...
+    		  t,sdim,w,vs,work,info = cgees(cselect,a,[compute_v,sort_t,lwork,cselect_extra_args,overwrite_a])
+    		Constructing wrapper function "zgees"...
+    		  t,sdim,w,vs,work,info = zgees(zselect,a,[compute_v,sort_t,lwork,zselect_extra_args,overwrite_a])
+    		Constructing wrapper function "sgees"...
+    		  t,sdim,wr,wi,vs,work,info = sgees(sselect,a,[compute_v,sort_t,lwork,sselect_extra_args,overwrite_a])
+    		Constructing wrapper function "dgees"...
+    		  t,sdim,wr,wi,vs,work,info = dgees(dselect,a,[compute_v,sort_t,lwork,dselect_extra_args,overwrite_a])
+    		Constructing wrapper function "sggev"...
+    		  alphar,alphai,beta,vl,vr,work,info = sggev(a,b,[compute_vl,compute_vr,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "dggev"...
+    		  alphar,alphai,beta,vl,vr,work,info = dggev(a,b,[compute_vl,compute_vr,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "cggev"...
+    		  alpha,beta,vl,vr,work,info = cggev(a,b,[compute_vl,compute_vr,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "zggev"...
+    		  alpha,beta,vl,vr,work,info = zggev(a,b,[compute_vl,compute_vr,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "ssbev"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  w,z,info = ssbev(ab,[compute_v,lower,ldab,overwrite_ab])
+    		Constructing wrapper function "dsbev"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  w,z,info = dsbev(ab,[compute_v,lower,ldab,overwrite_ab])
+    		Constructing wrapper function "ssbevd"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  w,z,info = ssbevd(ab,[compute_v,lower,ldab,liwork,overwrite_ab])
+    		Constructing wrapper function "dsbevd"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  w,z,info = dsbevd(ab,[compute_v,lower,ldab,liwork,overwrite_ab])
+    		Constructing wrapper function "ssbevx"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  w,z,m,ifail,info = ssbevx(ab,vl,vu,il,iu,[ldab,compute_v,range,lower,abstol,mmax,overwrite_ab])
+    		Constructing wrapper function "dsbevx"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  w,z,m,ifail,info = dsbevx(ab,vl,vu,il,iu,[ldab,compute_v,range,lower,abstol,mmax,overwrite_ab])
+    		Constructing wrapper function "chbevd"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  w,z,info = chbevd(ab,[compute_v,lower,ldab,lrwork,liwork,overwrite_ab])
+    		Constructing wrapper function "zhbevd"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  w,z,info = zhbevd(ab,[compute_v,lower,ldab,lrwork,liwork,overwrite_ab])
+    		Constructing wrapper function "chbevx"...
+    warning: callstatement is defined without callprotoargument
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  w,z,m,ifail,info = chbevx(ab,vl,vu,il,iu,[ldab,compute_v,range,lower,abstol,mmax,overwrite_ab])
+    		Constructing wrapper function "zhbevx"...
+    warning: callstatement is defined without callprotoargument
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  w,z,m,ifail,info = zhbevx(ab,vl,vu,il,iu,[ldab,compute_v,range,lower,abstol,mmax,overwrite_ab])
+    		Creating wrapper for Fortran function "dlamch"("dlamch")...
+    		Constructing wrapper function "dlamch"...
+    		  dlamch = dlamch(cmach)
+    		Creating wrapper for Fortran function "slamch"("wslamch")...
+    		Constructing wrapper function "slamch"...
+    		  slamch = slamch(cmach)
+    		Constructing wrapper function "sgbtrf"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  lu,ipiv,info = sgbtrf(ab,kl,ku,[m,n,ldab,overwrite_ab])
+    		Constructing wrapper function "dgbtrf"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  lu,ipiv,info = dgbtrf(ab,kl,ku,[m,n,ldab,overwrite_ab])
+    		Constructing wrapper function "cgbtrf"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  lu,ipiv,info = cgbtrf(ab,kl,ku,[m,n,ldab,overwrite_ab])
+    		Constructing wrapper function "zgbtrf"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  lu,ipiv,info = zgbtrf(ab,kl,ku,[m,n,ldab,overwrite_ab])
+    		Constructing wrapper function "sgbtrs"...
+    warning: callstatement is defined without callprotoargument
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,info = sgbtrs(ab,kl,ku,b,ipiv,[trans,n,ldab,ldb,overwrite_b])
+    		Constructing wrapper function "dgbtrs"...
+    warning: callstatement is defined without callprotoargument
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,info = dgbtrs(ab,kl,ku,b,ipiv,[trans,n,ldab,ldb,overwrite_b])
+    		Constructing wrapper function "cgbtrs"...
+    warning: callstatement is defined without callprotoargument
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,info = cgbtrs(ab,kl,ku,b,ipiv,[trans,n,ldab,ldb,overwrite_b])
+    		Constructing wrapper function "zgbtrs"...
+    warning: callstatement is defined without callprotoargument
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,info = zgbtrs(ab,kl,ku,b,ipiv,[trans,n,ldab,ldb,overwrite_b])
+    		Constructing wrapper function "ssyevr"...
+    		  w,z,info = ssyevr(a,[jobz,range,uplo,il,iu,lwork,overwrite_a])
+    		Constructing wrapper function "dsyevr"...
+    		  w,z,info = dsyevr(a,[jobz,range,uplo,il,iu,lwork,overwrite_a])
+    		Constructing wrapper function "cheevr"...
+    		  w,z,info = cheevr(a,[jobz,range,uplo,il,iu,lwork,overwrite_a])
+    		Constructing wrapper function "zheevr"...
+    		  w,z,info = zheevr(a,[jobz,range,uplo,il,iu,lwork,overwrite_a])
+    		Constructing wrapper function "ssygv"...
+    		  a,w,info = ssygv(a,b,[itype,jobz,uplo,overwrite_a,overwrite_b])
+    		Constructing wrapper function "dsygv"...
+    		  a,w,info = dsygv(a,b,[itype,jobz,uplo,overwrite_a,overwrite_b])
+    		Constructing wrapper function "chegv"...
+    		  a,w,info = chegv(a,b,[itype,jobz,uplo,overwrite_a,overwrite_b])
+    		Constructing wrapper function "zhegv"...
+    		  a,w,info = zhegv(a,b,[itype,jobz,uplo,overwrite_a,overwrite_b])
+    		Constructing wrapper function "ssygvd"...
+    		  a,w,info = ssygvd(a,b,[itype,jobz,uplo,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "dsygvd"...
+    		  a,w,info = dsygvd(a,b,[itype,jobz,uplo,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "chegvd"...
+    		  a,w,info = chegvd(a,b,[itype,jobz,uplo,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "zhegvd"...
+    		  a,w,info = zhegvd(a,b,[itype,jobz,uplo,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "ssygvx"...
+    		  w,z,ifail,info = ssygvx(a,b,iu,[itype,jobz,uplo,il,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "dsygvx"...
+    		  w,z,ifail,info = dsygvx(a,b,iu,[itype,jobz,uplo,il,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "chegvx"...
+    		  w,z,ifail,info = chegvx(a,b,iu,[itype,jobz,uplo,il,lwork,overwrite_a,overwrite_b])
+    		Constructing wrapper function "zhegvx"...
+    		  w,z,ifail,info = zhegvx(a,b,iu,[itype,jobz,uplo,il,lwork,overwrite_a,overwrite_b])
+    		Creating wrapper for Fortran function "slange"("wslange")...
+    		Constructing wrapper function "slange"...
+    		  n2 = slange(norm,a)
+    		Creating wrapper for Fortran function "dlange"("dlange")...
+    		Constructing wrapper function "dlange"...
+    		  n2 = dlange(norm,a)
+    		Creating wrapper for Fortran function "clange"("wclange")...
+    		Constructing wrapper function "clange"...
+    		  n2 = clange(norm,a)
+    		Creating wrapper for Fortran function "zlange"("zlange")...
+    		Constructing wrapper function "zlange"...
+    		  n2 = zlange(norm,a)
+    		Constructing wrapper function "slarfg"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  alpha,x,tau = slarfg(n,alpha,x,[incx,overwrite_x])
+    		Constructing wrapper function "dlarfg"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  alpha,x,tau = dlarfg(n,alpha,x,[incx,overwrite_x])
+    		Constructing wrapper function "clarfg"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  alpha,x,tau = clarfg(n,alpha,x,[incx,overwrite_x])
+    		Constructing wrapper function "zlarfg"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  alpha,x,tau = zlarfg(n,alpha,x,[incx,overwrite_x])
+    		Constructing wrapper function "slarf"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  c = slarf(v,tau,c,work,[side,incv,overwrite_c])
+    		Constructing wrapper function "dlarf"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  c = dlarf(v,tau,c,work,[side,incv,overwrite_c])
+    		Constructing wrapper function "clarf"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  c = clarf(v,tau,c,work,[side,incv,overwrite_c])
+    		Constructing wrapper function "zlarf"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  c = zlarf(v,tau,c,work,[side,incv,overwrite_c])
+    		Constructing wrapper function "slartg"...
+    		  cs,sn,r = slartg(f,g)
+    		Constructing wrapper function "dlartg"...
+    		  cs,sn,r = dlartg(f,g)
+    		Constructing wrapper function "clartg"...
+    		  cs,sn,r = clartg(f,g)
+    		Constructing wrapper function "zlartg"...
+    		  cs,sn,r = zlartg(f,g)
+    		Constructing wrapper function "crot"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y = crot(x,y,c,s,[n,offx,incx,offy,incy,overwrite_x,overwrite_y])
+    		Constructing wrapper function "zrot"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,y = zrot(x,y,c,s,[n,offx,incx,offy,incy,overwrite_x,overwrite_y])
+    		Constructing wrapper function "ilaver"...
+    		  major,minor,patch = ilaver()
+    	Wrote C/API module "_flapack" to file "build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/linalg/_flapackmodule.c"
+    	Fortran 77 wrappers are saved to "build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/linalg/_flapack-f2pywrappers.f"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+      adding 'build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/linalg/_flapack-f2pywrappers.f' to sources.
+    building extension "scipy.linalg._flinalg" sources
+    f2py options: []
+    f2py:> build/src.linux-x86_64-3.4/scipy/linalg/_flinalgmodule.c
+    Reading fortran codes...
+    	Reading file 'scipy/linalg/src/det.f' (format:fix,strict)
+    	Reading file 'scipy/linalg/src/lu.f' (format:fix,strict)
+    Post-processing...
+    	Block: _flinalg
+    {'attrspec': ['intent(out)']}
+    In: :_flinalg:scipy/linalg/src/det.f:ddet_c
+    vars2fortran: No typespec for argument "info".
+    			Block: ddet_c
+    {'attrspec': ['intent(out)']}
+    In: :_flinalg:scipy/linalg/src/det.f:ddet_r
+    vars2fortran: No typespec for argument "info".
+    			Block: ddet_r
+    {'attrspec': ['intent(out)']}
+    In: :_flinalg:scipy/linalg/src/det.f:sdet_c
+    vars2fortran: No typespec for argument "info".
+    			Block: sdet_c
+    {'attrspec': ['intent(out)']}
+    In: :_flinalg:scipy/linalg/src/det.f:sdet_r
+    vars2fortran: No typespec for argument "info".
+    			Block: sdet_r
+    {'attrspec': ['intent(out)']}
+    In: :_flinalg:scipy/linalg/src/det.f:zdet_c
+    vars2fortran: No typespec for argument "info".
+    			Block: zdet_c
+    {'attrspec': ['intent(out)']}
+    In: :_flinalg:scipy/linalg/src/det.f:zdet_r
+    vars2fortran: No typespec for argument "info".
+    			Block: zdet_r
+    {'attrspec': ['intent(out)']}
+    In: :_flinalg:scipy/linalg/src/det.f:cdet_c
+    vars2fortran: No typespec for argument "info".
+    			Block: cdet_c
+    {'attrspec': ['intent(out)']}
+    In: :_flinalg:scipy/linalg/src/det.f:cdet_r
+    vars2fortran: No typespec for argument "info".
+    			Block: cdet_r
+    {'attrspec': ['intent(out)']}
+    In: :_flinalg:scipy/linalg/src/lu.f:dlu_c
+    vars2fortran: No typespec for argument "info".
+    			Block: dlu_c
+    {'attrspec': ['intent(out)']}
+    In: :_flinalg:scipy/linalg/src/lu.f:zlu_c
+    vars2fortran: No typespec for argument "info".
+    			Block: zlu_c
+    {'attrspec': ['intent(out)']}
+    In: :_flinalg:scipy/linalg/src/lu.f:slu_c
+    vars2fortran: No typespec for argument "info".
+    			Block: slu_c
+    {'attrspec': ['intent(out)']}
+    In: :_flinalg:scipy/linalg/src/lu.f:clu_c
+    vars2fortran: No typespec for argument "info".
+    			Block: clu_c
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "_flinalg"...
+    		Constructing wrapper function "ddet_c"...
+    		  det,info = ddet_c(a,[overwrite_a])
+    		Constructing wrapper function "ddet_r"...
+    		  det,info = ddet_r(a,[overwrite_a])
+    		Constructing wrapper function "sdet_c"...
+    		  det,info = sdet_c(a,[overwrite_a])
+    		Constructing wrapper function "sdet_r"...
+    		  det,info = sdet_r(a,[overwrite_a])
+    		Constructing wrapper function "zdet_c"...
+    		  det,info = zdet_c(a,[overwrite_a])
+    		Constructing wrapper function "zdet_r"...
+    		  det,info = zdet_r(a,[overwrite_a])
+    		Constructing wrapper function "cdet_c"...
+    		  det,info = cdet_c(a,[overwrite_a])
+    		Constructing wrapper function "cdet_r"...
+    		  det,info = cdet_r(a,[overwrite_a])
+    		Constructing wrapper function "dlu_c"...
+    		  p,l,u,info = dlu_c(a,[permute_l,overwrite_a])
+    		Constructing wrapper function "zlu_c"...
+    		  p,l,u,info = zlu_c(a,[permute_l,overwrite_a])
+    		Constructing wrapper function "slu_c"...
+    		  p,l,u,info = slu_c(a,[permute_l,overwrite_a])
+    		Constructing wrapper function "clu_c"...
+    		  p,l,u,info = clu_c(a,[permute_l,overwrite_a])
+    	Wrote C/API module "_flinalg" to file "build/src.linux-x86_64-3.4/scipy/linalg/_flinalgmodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.linalg._interpolative" sources
+    f2py options: []
+    f2py: scipy/linalg/interpolative.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/linalg/interpolative.pyf' (format:free)
+    Post-processing...
+    	Block: _interpolative
+    			Block: id_srand
+    			Block: idd_frm
+    			Block: idd_sfrm
+    			Block: idd_frmi
+    			Block: idd_sfrmi
+    			Block: iddp_id
+    			Block: iddr_id
+    			Block: idd_reconid
+    			Block: idd_reconint
+    			Block: idd_copycols
+    			Block: idd_id2svd
+    			Block: idd_snorm
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:idd_snorm
+    get_useparameters: no module idd__user__routines info used by idd_snorm
+    			Block: idd_diffsnorm
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:idd_diffsnorm
+    get_useparameters: no module idd__user__routines info used by idd_diffsnorm
+    			Block: iddr_svd
+    			Block: iddp_svd
+    			Block: iddp_aid
+    			Block: idd_estrank
+    			Block: iddp_asvd
+    			Block: iddp_rid
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:iddp_rid
+    get_useparameters: no module idd__user__routines info used by iddp_rid
+    			Block: idd_findrank
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:idd_findrank
+    get_useparameters: no module idd__user__routines info used by idd_findrank
+    			Block: iddp_rsvd
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:iddp_rsvd
+    get_useparameters: no module idd__user__routines info used by iddp_rsvd
+    			Block: iddr_aid
+    			Block: iddr_aidi
+    			Block: iddr_asvd
+    			Block: iddr_rid
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:iddr_rid
+    get_useparameters: no module idd__user__routines info used by iddr_rid
+    			Block: iddr_rsvd
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:iddr_rsvd
+    get_useparameters: no module idd__user__routines info used by iddr_rsvd
+    			Block: idz_frm
+    			Block: idz_sfrm
+    			Block: idz_frmi
+    			Block: idz_sfrmi
+    			Block: idzp_id
+    			Block: idzr_id
+    			Block: idz_reconid
+    			Block: idz_reconint
+    			Block: idz_copycols
+    			Block: idz_id2svd
+    			Block: idz_snorm
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:idz_snorm
+    get_useparameters: no module idz__user__routines info used by idz_snorm
+    			Block: idz_diffsnorm
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:idz_diffsnorm
+    get_useparameters: no module idz__user__routines info used by idz_diffsnorm
+    			Block: idzr_svd
+    			Block: idzp_svd
+    			Block: idzp_aid
+    			Block: idz_estrank
+    			Block: idzp_asvd
+    			Block: idzp_rid
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:idzp_rid
+    get_useparameters: no module idz__user__routines info used by idzp_rid
+    			Block: idz_findrank
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:idz_findrank
+    get_useparameters: no module idz__user__routines info used by idz_findrank
+    			Block: idzp_rsvd
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:idzp_rsvd
+    get_useparameters: no module idz__user__routines info used by idzp_rsvd
+    			Block: idzr_aid
+    			Block: idzr_aidi
+    			Block: idzr_asvd
+    			Block: idzr_rid
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:idzr_rid
+    get_useparameters: no module idz__user__routines info used by idzr_rid
+    			Block: idzr_rsvd
+    In: scipy/linalg/interpolative.pyf:_interpolative:unknown_interface:idzr_rsvd
+    get_useparameters: no module idz__user__routines info used by idzr_rsvd
+    	Block: idd__user__routines
+    		Block: idd_user_interface
+    			Block: matvect
+    			Block: matvec
+    			Block: matvect2
+    			Block: matvec2
+    	Block: idz__user__routines
+    		Block: idz_user_interface
+    			Block: matveca
+    			Block: matvec
+    			Block: matveca2
+    			Block: matvec2
+    Post-processing (stage 2)...
+    Building modules...
+    	Constructing call-back function "cb_matvect_in_idd__user__routines"
+    	  def matvect(x,[m,n,p1,p2,p3,p4]): return y
+    	Constructing call-back function "cb_matvec_in_idd__user__routines"
+    	  def matvec(x,[n,m,p1,p2,p3,p4]): return y
+    	Constructing call-back function "cb_matvect2_in_idd__user__routines"
+    	  def matvect2(x,[m,n,p1,p2,p3,p4]): return y
+    	Constructing call-back function "cb_matvec2_in_idd__user__routines"
+    	  def matvec2(x,[n,m,p1,p2,p3,p4]): return y
+    	Constructing call-back function "cb_matveca_in_idz__user__routines"
+    	  def matveca(x,[m,n,p1,p2,p3,p4]): return y
+    	Constructing call-back function "cb_matvec_in_idz__user__routines"
+    	  def matvec(x,[n,m,p1,p2,p3,p4]): return y
+    	Constructing call-back function "cb_matveca2_in_idz__user__routines"
+    	  def matveca2(x,[m,n,p1,p2,p3,p4]): return y
+    	Constructing call-back function "cb_matvec2_in_idz__user__routines"
+    	  def matvec2(x,[n,m,p1,p2,p3,p4]): return y
+    	Building module "_interpolative"...
+    		Constructing wrapper function "id_srand"...
+    		  r = id_srand(n)
+    		Constructing wrapper function "id_srandi"...
+    		  id_srandi(t)
+    		Constructing wrapper function "id_srando"...
+    		  id_srando()
+    		Constructing wrapper function "idd_frm"...
+    		  y = idd_frm(n,w,x,[m])
+    		Constructing wrapper function "idd_sfrm"...
+    		  y = idd_sfrm(l,n,w,x,[m])
+    		Constructing wrapper function "idd_frmi"...
+    		  n,w = idd_frmi(m)
+    		Constructing wrapper function "idd_sfrmi"...
+    		  n,w = idd_sfrmi(l,m)
+    		Constructing wrapper function "iddp_id"...
+    		  krank,list,rnorms = iddp_id(eps,a,[m,n])
+    		Constructing wrapper function "iddr_id"...
+    		  list,rnorms = iddr_id(a,krank,[m,n])
+    		Constructing wrapper function "idd_reconid"...
+    		  approx = idd_reconid(col,list,proj,[m,krank,n])
+    		Constructing wrapper function "idd_reconint"...
+    		  p = idd_reconint(list,proj,[n,krank])
+    		Constructing wrapper function "idd_copycols"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  col = idd_copycols(a,krank,list,[m,n])
+    		Constructing wrapper function "idd_id2svd"...
+    		  u,v,s,ier = idd_id2svd(b,list,proj,[m,krank,n,w])
+    		Constructing wrapper function "idd_snorm"...
+    		  snorm,v = idd_snorm(m,n,matvect,matvec,its,[p1t,p2t,p3t,p4t,p1,p2,p3,p4,u,matvect_extra_args,matvec_extra_args])
+    		Constructing wrapper function "idd_diffsnorm"...
+    		  snorm = idd_diffsnorm(m,n,matvect,matvect2,matvec,matvec2,its,[p1t,p2t,p3t,p4t,p1t2,p2t2,p3t2,p4t2,p1,p2,p3,p4,p12,p22,p32,p42,w,matvect_extra_args,matvect2_extra_args,matvec_extra_args,matvec2_extra_args])
+    		Constructing wrapper function "iddr_svd"...
+    		  u,v,s,ier = iddr_svd(a,krank,[m,n,r])
+    		Constructing wrapper function "iddp_svd"...
+    		  krank,iu,iv,is,w,ier = iddp_svd(eps,a,[m,n])
+    		Constructing wrapper function "iddp_aid"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  krank,list,proj = iddp_aid(eps,a,work,proj,[m,n])
+    		Constructing wrapper function "idd_estrank"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  krank,ra = idd_estrank(eps,a,w,ra,[m,n])
+    		Constructing wrapper function "iddp_asvd"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  krank,iu,iv,is,w,ier = iddp_asvd(eps,a,winit,w,[m,n])
+    		Constructing wrapper function "iddp_rid"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  krank,list,proj,ier = iddp_rid(eps,m,n,matvect,proj,[p1,p2,p3,p4,matvect_extra_args])
+    		Constructing wrapper function "idd_findrank"...
+    		  krank,ra,ier = idd_findrank(eps,m,n,matvect,[p1,p2,p3,p4,w,matvect_extra_args])
+    		Constructing wrapper function "iddp_rsvd"...
+    		  krank,iu,iv,is,w,ier = iddp_rsvd(eps,m,n,matvect,matvec,[p1t,p2t,p3t,p4t,p1,p2,p3,p4,matvect_extra_args,matvec_extra_args])
+    		Constructing wrapper function "iddr_aid"...
+    		  list,proj = iddr_aid(a,krank,w,[m,n])
+    		Constructing wrapper function "iddr_aidi"...
+    		  w = iddr_aidi(m,n,krank)
+    		Constructing wrapper function "iddr_asvd"...
+    		  u,v,s,ier = iddr_asvd(a,krank,w,[m,n])
+    		Constructing wrapper function "iddr_rid"...
+    		  list,proj = iddr_rid(m,n,matvect,krank,[p1,p2,p3,p4,matvect_extra_args])
+    		Constructing wrapper function "iddr_rsvd"...
+    		  u,v,s,ier = iddr_rsvd(m,n,matvect,matvec,krank,[p1t,p2t,p3t,p4t,p1,p2,p3,p4,w,matvect_extra_args,matvec_extra_args])
+    		Constructing wrapper function "idz_frm"...
+    		  y = idz_frm(n,w,x,[m])
+    		Constructing wrapper function "idz_sfrm"...
+    		  y = idz_sfrm(l,n,w,x,[m])
+    		Constructing wrapper function "idz_frmi"...
+    		  n,w = idz_frmi(m)
+    		Constructing wrapper function "idz_sfrmi"...
+    		  n,w = idz_sfrmi(l,m)
+    		Constructing wrapper function "idzp_id"...
+    		  krank,list,rnorms = idzp_id(eps,a,[m,n])
+    		Constructing wrapper function "idzr_id"...
+    		  list,rnorms = idzr_id(a,krank,[m,n])
+    		Constructing wrapper function "idz_reconid"...
+    		  approx = idz_reconid(col,list,proj,[m,krank,n])
+    		Constructing wrapper function "idz_reconint"...
+    		  p = idz_reconint(list,proj,[n,krank])
+    		Constructing wrapper function "idz_copycols"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  col = idz_copycols(a,krank,list,[m,n])
+    		Constructing wrapper function "idz_id2svd"...
+    		  u,v,s,ier = idz_id2svd(b,list,proj,[m,krank,n,w])
+    		Constructing wrapper function "idz_snorm"...
+    		  snorm,v = idz_snorm(m,n,matveca,matvec,its,[p1a,p2a,p3a,p4a,p1,p2,p3,p4,u,matveca_extra_args,matvec_extra_args])
+    		Constructing wrapper function "idz_diffsnorm"...
+    		  snorm = idz_diffsnorm(m,n,matveca,matveca2,matvec,matvec2,its,[p1a,p2a,p3a,p4a,p1a2,p2a2,p3a2,p4a2,p1,p2,p3,p4,p12,p22,p32,p42,w,matveca_extra_args,matveca2_extra_args,matvec_extra_args,matvec2_extra_args])
+    		Constructing wrapper function "idzr_svd"...
+    		  u,v,s,ier = idzr_svd(a,krank,[m,n,r])
+    		Constructing wrapper function "idzp_svd"...
+    		  krank,iu,iv,is,w,ier = idzp_svd(eps,a,[m,n])
+    		Constructing wrapper function "idzp_aid"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  krank,list,proj = idzp_aid(eps,a,work,proj,[m,n])
+    		Constructing wrapper function "idz_estrank"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  krank,ra = idz_estrank(eps,a,w,ra,[m,n])
+    		Constructing wrapper function "idzp_asvd"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  krank,iu,iv,is,w,ier = idzp_asvd(eps,a,winit,w,[m,n])
+    		Constructing wrapper function "idzp_rid"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  krank,list,proj,ier = idzp_rid(eps,m,n,matveca,proj,[p1,p2,p3,p4,matveca_extra_args])
+    		Constructing wrapper function "idz_findrank"...
+    		  krank,ra,ier = idz_findrank(eps,m,n,matveca,[p1,p2,p3,p4,w,matveca_extra_args])
+    		Constructing wrapper function "idzp_rsvd"...
+    		  krank,iu,iv,is,w,ier = idzp_rsvd(eps,m,n,matveca,matvec,[p1a,p2a,p3a,p4a,p1,p2,p3,p4,matveca_extra_args,matvec_extra_args])
+    		Constructing wrapper function "idzr_aid"...
+    		  list,proj = idzr_aid(a,krank,w,[m,n])
+    		Constructing wrapper function "idzr_aidi"...
+    		  w = idzr_aidi(m,n,krank)
+    		Constructing wrapper function "idzr_asvd"...
+    		  u,v,s,ier = idzr_asvd(a,krank,w,[m,n])
+    		Constructing wrapper function "idzr_rid"...
+    		  list,proj = idzr_rid(m,n,matveca,krank,[p1,p2,p3,p4,matveca_extra_args])
+    		Constructing wrapper function "idzr_rsvd"...
+    		  u,v,s,ier = idzr_rsvd(m,n,matveca,matvec,krank,[p1a,p2a,p3a,p4a,p1,p2,p3,p4,w,matveca_extra_args,matvec_extra_args])
+    	Wrote C/API module "_interpolative" to file "build/src.linux-x86_64-3.4/scipy/linalg/_interpolativemodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.linalg._calc_lwork" sources
+    f2py options: []
+    f2py:> build/src.linux-x86_64-3.4/scipy/linalg/_calc_lworkmodule.c
+    Reading fortran codes...
+    	Reading file 'scipy/linalg/src/calc_lwork.f' (format:fix,strict)
+    Post-processing...
+    	Block: _calc_lwork
+    			Block: gehrd
+    			Block: gesdd
+    			Block: gelss
+    			Block: getri
+    			Block: geev
+    			Block: heev
+    			Block: syev
+    			Block: gees
+    			Block: geqrf
+    			Block: gqr
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "_calc_lwork"...
+    		Constructing wrapper function "gehrd"...
+    		  minwrk,maxwrk = gehrd(prefix,n,lo,hi)
+    		Constructing wrapper function "gesdd"...
+    		  minwrk,maxwrk = gesdd(prefix,m,n,compute_uv)
+    		Constructing wrapper function "gelss"...
+    		  minwrk,maxwrk = gelss(prefix,m,n,nrhs)
+    		Constructing wrapper function "getri"...
+    		  minwrk,maxwrk = getri(prefix,n)
+    		Constructing wrapper function "geev"...
+    		  minwrk,maxwrk = geev(prefix,n,[compute_vl,compute_vr])
+    		Constructing wrapper function "heev"...
+    		  minwrk,maxwrk = heev(prefix,n,[lower])
+    		Constructing wrapper function "syev"...
+    		  minwrk,maxwrk = syev(prefix,n,[lower])
+    		Constructing wrapper function "gees"...
+    		  minwrk,maxwrk = gees(prefix,n,[compute_v])
+    		Constructing wrapper function "geqrf"...
+    		  minwrk,maxwrk = geqrf(prefix,m,n)
+    		Constructing wrapper function "gqr"...
+    		  minwrk,maxwrk = gqr(prefix,m,n)
+    	Wrote C/API module "_calc_lwork" to file "build/src.linux-x86_64-3.4/scipy/linalg/_calc_lworkmodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.linalg._solve_toeplitz" sources
+    building extension "scipy.linalg.cython_blas" sources
+    building extension "scipy.linalg.cython_lapack" sources
+    building extension "scipy.linalg._decomp_update" sources
+    building extension "scipy.odr.__odrpack" sources
+    building extension "scipy.optimize._minpack" sources
+    building extension "scipy.optimize._zeros" sources
+    building extension "scipy.optimize._lbfgsb" sources
+    creating build/src.linux-x86_64-3.4/scipy/optimize
+    creating build/src.linux-x86_64-3.4/scipy/optimize/lbfgsb
+    f2py options: []
+    f2py: scipy/optimize/lbfgsb/lbfgsb.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/optimize/lbfgsb/lbfgsb.pyf' (format:free)
+    Post-processing...
+    	Block: _lbfgsb
+    			Block: setulb
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "_lbfgsb"...
+    		Constructing wrapper function "setulb"...
+    		  setulb(m,x,l,u,nbd,f,g,factr,pgtol,wa,iwa,task,iprint,csave,lsave,isave,dsave,maxls,[n])
+    	Wrote C/API module "_lbfgsb" to file "build/src.linux-x86_64-3.4/scipy/optimize/lbfgsb/_lbfgsbmodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.optimize.moduleTNC" sources
+    building extension "scipy.optimize._cobyla" sources
+    creating build/src.linux-x86_64-3.4/scipy/optimize/cobyla
+    f2py options: []
+    f2py: scipy/optimize/cobyla/cobyla.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/optimize/cobyla/cobyla.pyf' (format:free)
+    Post-processing...
+    	Block: _cobyla__user__routines
+    		Block: _cobyla_user_interface
+    			Block: calcfc
+    	Block: _cobyla
+    			Block: minimize
+    In: scipy/optimize/cobyla/cobyla.pyf:_cobyla:unknown_interface:minimize
+    get_useparameters: no module _cobyla__user__routines info used by minimize
+    Post-processing (stage 2)...
+    Building modules...
+    	Constructing call-back function "cb_calcfc_in__cobyla__user__routines"
+    	  def calcfc(x,con): return f
+    	Building module "_cobyla"...
+    		Constructing wrapper function "minimize"...
+    		  x,dinfo = minimize(calcfc,m,x,rhobeg,rhoend,dinfo,[iprint,maxfun,calcfc_extra_args])
+    	Wrote C/API module "_cobyla" to file "build/src.linux-x86_64-3.4/scipy/optimize/cobyla/_cobylamodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.optimize.minpack2" sources
+    creating build/src.linux-x86_64-3.4/scipy/optimize/minpack2
+    f2py options: []
+    f2py: scipy/optimize/minpack2/minpack2.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/optimize/minpack2/minpack2.pyf' (format:free)
+    Post-processing...
+    	Block: minpack2
+    			Block: dcsrch
+    			Block: dcstep
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "minpack2"...
+    		Constructing wrapper function "dcsrch"...
+    		  stp,f,g,task = dcsrch(stp,f,g,ftol,gtol,xtol,task,stpmin,stpmax,isave,dsave)
+    		Constructing wrapper function "dcstep"...
+    		  stx,fx,dx,sty,fy,dy,stp,brackt = dcstep(stx,fx,dx,sty,fy,dy,stp,fp,dp,brackt,stpmin,stpmax)
+    	Wrote C/API module "minpack2" to file "build/src.linux-x86_64-3.4/scipy/optimize/minpack2/minpack2module.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.optimize._slsqp" sources
+    creating build/src.linux-x86_64-3.4/scipy/optimize/slsqp
+    f2py options: []
+    f2py: scipy/optimize/slsqp/slsqp.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/optimize/slsqp/slsqp.pyf' (format:free)
+    Post-processing...
+    	Block: _slsqp
+    			Block: slsqp
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "_slsqp"...
+    		Constructing wrapper function "slsqp"...
+    		  slsqp(m,meq,x,xl,xu,f,c,g,a,acc,iter,mode,w,jw,[la,n,l_w,l_jw])
+    	Wrote C/API module "_slsqp" to file "build/src.linux-x86_64-3.4/scipy/optimize/slsqp/_slsqpmodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.optimize._nnls" sources
+    creating build/src.linux-x86_64-3.4/scipy/optimize/nnls
+    f2py options: []
+    f2py: scipy/optimize/nnls/nnls.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/optimize/nnls/nnls.pyf' (format:free)
+    crackline: groupcounter=1 groupname={0: '', 1: 'python module', 2: 'interface', 3: 'subroutine'}
+    crackline: Mismatch of blocks encountered. Trying to fix it by assuming "end" statement.
+    Post-processing...
+    	Block: _nnls
+    			Block: nnls
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "_nnls"...
+    		Constructing wrapper function "nnls"...
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    getarrdims:warning: assumed shape array, using 0 instead of '*'
+    		  x,rnorm,mode = nnls(a,m,n,b,w,zz,index_bn,[mda,overwrite_a,overwrite_b])
+    	Wrote C/API module "_nnls" to file "build/src.linux-x86_64-3.4/scipy/optimize/nnls/_nnlsmodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.optimize._group_columns" sources
+    building extension "scipy.optimize._lsq.givens_elimination" sources
+    building extension "scipy.signal.sigtools" sources
+    creating build/src.linux-x86_64-3.4/scipy/signal
+    conv_template:> build/src.linux-x86_64-3.4/scipy/signal/lfilter.c
+    conv_template:> build/src.linux-x86_64-3.4/scipy/signal/correlate_nd.c
+    building extension "scipy.signal._spectral" sources
+    building extension "scipy.signal._max_len_seq_inner" sources
+    building extension "scipy.signal._upfirdn_apply" sources
+    building extension "scipy.signal.spline" sources
+    building extension "scipy.sparse.linalg.isolve._iterative" sources
+    creating build/src.linux-x86_64-3.4/scipy/sparse
+    creating build/src.linux-x86_64-3.4/scipy/sparse/linalg
+    creating build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve
+    creating build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative
+    from_template:> build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative/STOPTEST2.f
+    from_template:> build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative/getbreak.f
+    from_template:> build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative/BiCGREVCOM.f
+    from_template:> build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative/BiCGSTABREVCOM.f
+    from_template:> build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative/CGREVCOM.f
+    from_template:> build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative/CGSREVCOM.f
+    from_template:> build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative/GMRESREVCOM.f
+    from_template:> build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative/QMRREVCOM.f
+    from_template:> build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative/_iterative.pyf
+    creating build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/sparse
+    creating build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/sparse/linalg
+    creating build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve
+    creating build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative
+    f2py options: []
+    f2py: build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative/_iterative.pyf
+    Reading fortran codes...
+    	Reading file 'build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative/_iterative.pyf' (format:free)
+    Post-processing...
+    	Block: _iterative
+    			Block: sbicgrevcom
+    			Block: dbicgrevcom
+    			Block: cbicgrevcom
+    			Block: zbicgrevcom
+    			Block: sbicgstabrevcom
+    			Block: dbicgstabrevcom
+    			Block: cbicgstabrevcom
+    			Block: zbicgstabrevcom
+    			Block: scgrevcom
+    			Block: dcgrevcom
+    			Block: ccgrevcom
+    			Block: zcgrevcom
+    			Block: scgsrevcom
+    			Block: dcgsrevcom
+    			Block: ccgsrevcom
+    			Block: zcgsrevcom
+    			Block: sqmrrevcom
+    			Block: dqmrrevcom
+    			Block: cqmrrevcom
+    			Block: zqmrrevcom
+    			Block: sgmresrevcom
+    			Block: dgmresrevcom
+    			Block: cgmresrevcom
+    			Block: zgmresrevcom
+    			Block: sstoptest2
+    			Block: dstoptest2
+    			Block: cstoptest2
+    			Block: zstoptest2
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "_iterative"...
+    		Constructing wrapper function "sbicgrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = sbicgrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "dbicgrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = dbicgrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "cbicgrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = cbicgrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "zbicgrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = zbicgrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "sbicgstabrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = sbicgstabrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "dbicgstabrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = dbicgstabrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "cbicgstabrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = cbicgstabrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "zbicgstabrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = zbicgstabrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "scgrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = scgrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "dcgrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = dcgrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "ccgrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = ccgrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "zcgrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = zcgrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "scgsrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = scgsrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "dcgsrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = dcgsrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "ccgsrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = ccgsrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "zcgsrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = zcgsrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "sqmrrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = sqmrrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "dqmrrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = dqmrrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "cqmrrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = cqmrrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "zqmrrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = zqmrrevcom(b,x,work,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "sgmresrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = sgmresrevcom(b,x,restrt,work,work2,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "dgmresrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = dgmresrevcom(b,x,restrt,work,work2,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "cgmresrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = cgmresrevcom(b,x,restrt,work,work2,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "zgmresrevcom"...
+    		  x,iter,resid,info,ndx1,ndx2,sclr1,sclr2,ijob = zgmresrevcom(b,x,restrt,work,work2,iter,resid,info,ndx1,ndx2,ijob)
+    		Constructing wrapper function "sstoptest2"...
+    		  bnrm2,resid,info = sstoptest2(r,b,bnrm2,tol,info)
+    		Constructing wrapper function "dstoptest2"...
+    		  bnrm2,resid,info = dstoptest2(r,b,bnrm2,tol,info)
+    		Constructing wrapper function "cstoptest2"...
+    		  bnrm2,resid,info = cstoptest2(r,b,bnrm2,tol,info)
+    		Constructing wrapper function "zstoptest2"...
+    		  bnrm2,resid,info = zstoptest2(r,b,bnrm2,tol,info)
+    	Wrote C/API module "_iterative" to file "build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/sparse/linalg/isolve/iterative/_iterativemodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.sparse.linalg.dsolve._superlu" sources
+    building extension "scipy.sparse.linalg.eigen.arpack._arpack" sources
+    creating build/src.linux-x86_64-3.4/scipy/sparse/linalg/eigen
+    creating build/src.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack
+    from_template:> build/src.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack/arpack.pyf
+    creating build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/sparse/linalg/eigen
+    creating build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack
+    f2py options: []
+    f2py: build/src.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack/arpack.pyf
+    Reading fortran codes...
+    	Reading file 'build/src.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack/arpack.pyf' (format:free)
+    Line #5 in build/src.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack/arpack.pyf:"    <_rd=real,double precision>"
+    	crackline:1: No pattern for line
+    Line #6 in build/src.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack/arpack.pyf:"    <_cd=complex,double complex>"
+    	crackline:1: No pattern for line
+    Post-processing...
+    	Block: _arpack
+    			Block: ssaupd
+    			Block: dsaupd
+    			Block: sseupd
+    			Block: dseupd
+    			Block: snaupd
+    			Block: dnaupd
+    			Block: sneupd
+    			Block: dneupd
+    			Block: cnaupd
+    			Block: znaupd
+    			Block: cneupd
+    			Block: zneupd
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "_arpack"...
+    		Constructing wrapper function "ssaupd"...
+    		  ido,tol,resid,v,iparam,ipntr,info = ssaupd(ido,bmat,which,nev,tol,resid,v,iparam,ipntr,workd,workl,info,[n,ncv,ldv,lworkl])
+    		Constructing wrapper function "dsaupd"...
+    		  ido,tol,resid,v,iparam,ipntr,info = dsaupd(ido,bmat,which,nev,tol,resid,v,iparam,ipntr,workd,workl,info,[n,ncv,ldv,lworkl])
+    		Constructing wrapper function "sseupd"...
+    		  d,z,info = sseupd(rvec,howmny,select,sigma,bmat,which,nev,tol,resid,v,iparam,ipntr,workd,workl,info,[ldz,n,ncv,ldv,lworkl])
+    		Constructing wrapper function "dseupd"...
+    		  d,z,info = dseupd(rvec,howmny,select,sigma,bmat,which,nev,tol,resid,v,iparam,ipntr,workd,workl,info,[ldz,n,ncv,ldv,lworkl])
+    		Constructing wrapper function "snaupd"...
+    		  ido,tol,resid,v,iparam,ipntr,info = snaupd(ido,bmat,which,nev,tol,resid,v,iparam,ipntr,workd,workl,info,[n,ncv,ldv,lworkl])
+    		Constructing wrapper function "dnaupd"...
+    		  ido,tol,resid,v,iparam,ipntr,info = dnaupd(ido,bmat,which,nev,tol,resid,v,iparam,ipntr,workd,workl,info,[n,ncv,ldv,lworkl])
+    		Constructing wrapper function "sneupd"...
+    		  dr,di,z,info = sneupd(rvec,howmny,select,sigmar,sigmai,workev,bmat,which,nev,tol,resid,v,iparam,ipntr,workd,workl,info,[ldz,n,ncv,ldv,lworkl])
+    		Constructing wrapper function "dneupd"...
+    		  dr,di,z,info = dneupd(rvec,howmny,select,sigmar,sigmai,workev,bmat,which,nev,tol,resid,v,iparam,ipntr,workd,workl,info,[ldz,n,ncv,ldv,lworkl])
+    		Constructing wrapper function "cnaupd"...
+    		  ido,tol,resid,v,iparam,ipntr,info = cnaupd(ido,bmat,which,nev,tol,resid,v,iparam,ipntr,workd,workl,rwork,info,[n,ncv,ldv,lworkl])
+    		Constructing wrapper function "znaupd"...
+    		  ido,tol,resid,v,iparam,ipntr,info = znaupd(ido,bmat,which,nev,tol,resid,v,iparam,ipntr,workd,workl,rwork,info,[n,ncv,ldv,lworkl])
+    		Constructing wrapper function "cneupd"...
+    		  d,z,info = cneupd(rvec,howmny,select,sigma,workev,bmat,which,nev,tol,resid,v,iparam,ipntr,workd,workl,rwork,info,[ldz,n,ncv,ldv,lworkl])
+    		Constructing wrapper function "zneupd"...
+    		  d,z,info = zneupd(rvec,howmny,select,sigma,workev,bmat,which,nev,tol,resid,v,iparam,ipntr,workd,workl,rwork,info,[ldz,n,ncv,ldv,lworkl])
+    		Constructing COMMON block support for "timing"...
+    		  nopx,nbx,nrorth,nitref,nrstrt,tsaupd,tsaup2,tsaitr,tseigt,tsgets,tsapps,tsconv,tnaupd,tnaup2,tnaitr,tneigh,tngets,tnapps,tnconv,tcaupd,tcaup2,tcaitr,tceigh,tcgets,tcapps,tcconv,tmvopx,tmvbx,tgetv0,titref,trvec
+    		Constructing COMMON block support for "debug"...
+    		  logfil,ndigit,mgetv0,msaupd,msaup2,msaitr,mseigt,msapps,msgets,mseupd,mnaupd,mnaup2,mnaitr,mneigh,mnapps,mngets,mneupd,mcaupd,mcaup2,mcaitr,mceigh,mcapps,mcgets,mceupd
+    	Wrote C/API module "_arpack" to file "build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack/_arpackmodule.c"
+    	Fortran 77 wrappers are saved to "build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack/_arpack-f2pywrappers.f"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+      adding 'build/src.linux-x86_64-3.4/build/src.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack/_arpack-f2pywrappers.f' to sources.
+    building extension "scipy.sparse.csgraph._shortest_path" sources
+    building extension "scipy.sparse.csgraph._traversal" sources
+    building extension "scipy.sparse.csgraph._min_spanning_tree" sources
+    building extension "scipy.sparse.csgraph._reordering" sources
+    building extension "scipy.sparse.csgraph._tools" sources
+    building extension "scipy.sparse._csparsetools" sources
+    building extension "scipy.sparse._sparsetools" sources
+    [generate_sparsetools] generating 'scipy/sparse/sparsetools/bsr_impl.h'
+    [generate_sparsetools] generating 'scipy/sparse/sparsetools/csr_impl.h'
+    [generate_sparsetools] generating 'scipy/sparse/sparsetools/csc_impl.h'
+    [generate_sparsetools] generating 'scipy/sparse/sparsetools/other_impl.h'
+    [generate_sparsetools] generating 'scipy/sparse/sparsetools/sparsetools_impl.h'
+    building extension "scipy.spatial.qhull" sources
+    creating build/src.linux-x86_64-3.4/scipy/spatial
+    customize Gnu95FCompiler
+    Found executable /usr/bin/gfortran
+    customize Gnu95FCompiler
+    customize Gnu95FCompiler using config
+    C compiler: x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fPIC
+    
+    compile options: '-I/usr/include/python3.4m -I/root/virtualenv/include/python3.4m -c'
+    x86_64-linux-gnu-gcc: _configtest.c
+    x86_64-linux-gnu-gcc -pthread _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    building extension "scipy.spatial.ckdtree" sources
+    building extension "scipy.spatial._distance_wrap" sources
+    building extension "scipy.special.specfun" sources
+    creating build/src.linux-x86_64-3.4/scipy/special
+    f2py options: ['--no-wrap-functions']
+    f2py: scipy/special/specfun.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/special/specfun.pyf' (format:free)
+    Post-processing...
+    	Block: specfun
+    			Block: clqmn
+    			Block: lqmn
+    			Block: clpmn
+    			Block: jdzo
+    			Block: bernob
+    			Block: bernoa
+    			Block: csphjy
+    			Block: lpmns
+    			Block: eulera
+    			Block: clqn
+    			Block: airyzo
+    			Block: eulerb
+    			Block: cva1
+    			Block: lqnb
+    			Block: lamv
+    			Block: lagzo
+    			Block: legzo
+    			Block: pbdv
+    			Block: cerzo
+    			Block: lamn
+    			Block: clpn
+    			Block: lqmns
+    			Block: chgm
+    			Block: lpmn
+    			Block: fcszo
+    			Block: aswfb
+    			Block: lqna
+    			Block: cpbdn
+    			Block: lpn
+    			Block: fcoef
+    			Block: sphi
+    			Block: rcty
+    			Block: lpni
+    			Block: cyzo
+    			Block: csphik
+    			Block: sphj
+    			Block: othpl
+    			Block: klvnzo
+    			Block: jyzo
+    			Block: rctj
+    			Block: herzo
+    			Block: sphk
+    			Block: pbvv
+    			Block: segv
+    			Block: sphy
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "specfun"...
+    		Constructing wrapper function "clqmn"...
+    		  cqm,cqd = clqmn(m,n,z)
+    		Constructing wrapper function "lqmn"...
+    		  qm,qd = lqmn(m,n,x)
+    		Constructing wrapper function "clpmn"...
+    		  cpm,cpd = clpmn(m,n,x,y,ntype)
+    		Constructing wrapper function "jdzo"...
+    		  n,m,pcode,zo = jdzo(nt)
+    		Constructing wrapper function "bernob"...
+    		  bn = bernob(n)
+    		Constructing wrapper function "bernoa"...
+    		  bn = bernoa(n)
+    		Constructing wrapper function "csphjy"...
+    		  nm,csj,cdj,csy,cdy = csphjy(n,z)
+    		Constructing wrapper function "lpmns"...
+    		  pm,pd = lpmns(m,n,x)
+    		Constructing wrapper function "eulera"...
+    		  en = eulera(n)
+    		Constructing wrapper function "clqn"...
+    		  cqn,cqd = clqn(n,z)
+    		Constructing wrapper function "airyzo"...
+    		  xa,xb,xc,xd = airyzo(nt,[kf])
+    		Constructing wrapper function "eulerb"...
+    		  en = eulerb(n)
+    		Constructing wrapper function "cva1"...
+    		  cv = cva1(kd,m,q)
+    		Constructing wrapper function "lqnb"...
+    		  qn,qd = lqnb(n,x)
+    		Constructing wrapper function "lamv"...
+    		  vm,vl,dl = lamv(v,x)
+    		Constructing wrapper function "lagzo"...
+    		  x,w = lagzo(n)
+    		Constructing wrapper function "legzo"...
+    		  x,w = legzo(n)
+    		Constructing wrapper function "pbdv"...
+    		  dv,dp,pdf,pdd = pbdv(v,x)
+    		Constructing wrapper function "cerzo"...
+    		  zo = cerzo(nt)
+    		Constructing wrapper function "lamn"...
+    		  nm,bl,dl = lamn(n,x)
+    		Constructing wrapper function "clpn"...
+    		  cpn,cpd = clpn(n,z)
+    		Constructing wrapper function "lqmns"...
+    		  qm,qd = lqmns(m,n,x)
+    		Constructing wrapper function "chgm"...
+    		  hg = chgm(a,b,x)
+    		Constructing wrapper function "lpmn"...
+    		  pm,pd = lpmn(m,n,x)
+    		Constructing wrapper function "fcszo"...
+    		  zo = fcszo(kf,nt)
+    		Constructing wrapper function "aswfb"...
+    		  s1f,s1d = aswfb(m,n,c,x,kd,cv)
+    		Constructing wrapper function "lqna"...
+    		  qn,qd = lqna(n,x)
+    		Constructing wrapper function "cpbdn"...
+    		  cpb,cpd = cpbdn(n,z)
+    		Constructing wrapper function "lpn"...
+    		  pn,pd = lpn(n,x)
+    		Constructing wrapper function "fcoef"...
+    		  fc = fcoef(kd,m,q,a)
+    		Constructing wrapper function "sphi"...
+    		  nm,si,di = sphi(n,x)
+    		Constructing wrapper function "rcty"...
+    		  nm,ry,dy = rcty(n,x)
+    		Constructing wrapper function "lpni"...
+    		  pn,pd,pl = lpni(n,x)
+    		Constructing wrapper function "cyzo"...
+    		  zo,zv = cyzo(nt,kf,kc)
+    		Constructing wrapper function "csphik"...
+    		  nm,csi,cdi,csk,cdk = csphik(n,z)
+    		Constructing wrapper function "sphj"...
+    		  nm,sj,dj = sphj(n,x)
+    		Constructing wrapper function "othpl"...
+    		  pl,dpl = othpl(kf,n,x)
+    		Constructing wrapper function "klvnzo"...
+    		  zo = klvnzo(nt,kd)
+    		Constructing wrapper function "jyzo"...
+    		  rj0,rj1,ry0,ry1 = jyzo(n,nt)
+    		Constructing wrapper function "rctj"...
+    		  nm,rj,dj = rctj(n,x)
+    		Constructing wrapper function "herzo"...
+    		  x,w = herzo(n)
+    		Constructing wrapper function "sphk"...
+    		  nm,sk,dk = sphk(n,x)
+    		Constructing wrapper function "pbvv"...
+    		  vv,vp,pvf,pvd = pbvv(v,x)
+    		Constructing wrapper function "segv"...
+    		  cv,eg = segv(m,n,c,kd)
+    		Constructing wrapper function "sphy"...
+    		  nm,sy,dy = sphy(n,x)
+    	Wrote C/API module "specfun" to file "build/src.linux-x86_64-3.4/scipy/special/specfunmodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.special._ufuncs" sources
+    conv_template:> build/src.linux-x86_64-3.4/scipy/special/_logit.c
+    building extension "scipy.special._ufuncs_cxx" sources
+    building extension "scipy.special._ellip_harm_2" sources
+    building extension "scipy.special._comb" sources
+    building extension "scipy.stats.statlib" sources
+    creating build/src.linux-x86_64-3.4/scipy/stats
+    f2py options: ['--no-wrap-functions']
+    f2py: scipy/stats/statlib.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/stats/statlib.pyf' (format:free)
+    Post-processing...
+    	Block: statlib
+    			Block: swilk
+    			Block: gscale
+    			Block: prho
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "statlib"...
+    		Constructing wrapper function "swilk"...
+    		  a,w,pw,ifault = swilk(x,a,[init,n1])
+    		Constructing wrapper function "gscale"...
+    		  astart,a1,ifault = gscale(test,other)
+    		Constructing wrapper function "prho"...
+    		  ifault = prho(n,is)
+    	Wrote C/API module "statlib" to file "build/src.linux-x86_64-3.4/scipy/stats/statlibmodule.c"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+    building extension "scipy.stats._stats" sources
+    building extension "scipy.stats.mvn" sources
+    f2py options: []
+    f2py: scipy/stats/mvn.pyf
+    Reading fortran codes...
+    	Reading file 'scipy/stats/mvn.pyf' (format:free)
+    Post-processing...
+    	Block: mvn
+    			Block: mvnun
+    			Block: mvndst
+    Post-processing (stage 2)...
+    Building modules...
+    	Building module "mvn"...
+    		Constructing wrapper function "mvnun"...
+    		  value,inform = mvnun(lower,upper,means,covar,[maxpts,abseps,releps])
+    		Constructing wrapper function "mvndst"...
+    		  error,value,inform = mvndst(lower,upper,infin,correl,[maxpts,abseps,releps])
+    		Constructing COMMON block support for "dkblck"...
+    		  ivls
+    	Wrote C/API module "mvn" to file "build/src.linux-x86_64-3.4/scipy/stats/mvnmodule.c"
+    	Fortran 77 wrappers are saved to "build/src.linux-x86_64-3.4/scipy/stats/mvn-f2pywrappers.f"
+      adding 'build/src.linux-x86_64-3.4/fortranobject.c' to sources.
+      adding 'build/src.linux-x86_64-3.4' to include_dirs.
+      adding 'build/src.linux-x86_64-3.4/scipy/stats/mvn-f2pywrappers.f' to sources.
+    building extension "scipy.ndimage._nd_image" sources
+    building extension "scipy.ndimage._ni_label" sources
+    building data_files sources
+    build_src: building npy-pkg config files
+    running build_py
+    creating build/lib.linux-x86_64-3.4
+    creating build/lib.linux-x86_64-3.4/scipy
+    copying scipy/__init__.py -> build/lib.linux-x86_64-3.4/scipy
+    copying scipy/version.py -> build/lib.linux-x86_64-3.4/scipy
+    copying scipy/setup.py -> build/lib.linux-x86_64-3.4/scipy
+    copying build/src.linux-x86_64-3.4/scipy/__config__.py -> build/lib.linux-x86_64-3.4/scipy
+    creating build/lib.linux-x86_64-3.4/scipy/cluster
+    copying scipy/cluster/__init__.py -> build/lib.linux-x86_64-3.4/scipy/cluster
+    copying scipy/cluster/hierarchy.py -> build/lib.linux-x86_64-3.4/scipy/cluster
+    copying scipy/cluster/vq.py -> build/lib.linux-x86_64-3.4/scipy/cluster
+    copying scipy/cluster/setup.py -> build/lib.linux-x86_64-3.4/scipy/cluster
+    creating build/lib.linux-x86_64-3.4/scipy/constants
+    copying scipy/constants/codata.py -> build/lib.linux-x86_64-3.4/scipy/constants
+    copying scipy/constants/__init__.py -> build/lib.linux-x86_64-3.4/scipy/constants
+    copying scipy/constants/constants.py -> build/lib.linux-x86_64-3.4/scipy/constants
+    copying scipy/constants/setup.py -> build/lib.linux-x86_64-3.4/scipy/constants
+    creating build/lib.linux-x86_64-3.4/scipy/fftpack
+    copying scipy/fftpack/helper.py -> build/lib.linux-x86_64-3.4/scipy/fftpack
+    copying scipy/fftpack/basic.py -> build/lib.linux-x86_64-3.4/scipy/fftpack
+    copying scipy/fftpack/__init__.py -> build/lib.linux-x86_64-3.4/scipy/fftpack
+    copying scipy/fftpack/pseudo_diffs.py -> build/lib.linux-x86_64-3.4/scipy/fftpack
+    copying scipy/fftpack/realtransforms.py -> build/lib.linux-x86_64-3.4/scipy/fftpack
+    copying scipy/fftpack/fftpack_version.py -> build/lib.linux-x86_64-3.4/scipy/fftpack
+    copying scipy/fftpack/setup.py -> build/lib.linux-x86_64-3.4/scipy/fftpack
+    creating build/lib.linux-x86_64-3.4/scipy/integrate
+    copying scipy/integrate/quadrature.py -> build/lib.linux-x86_64-3.4/scipy/integrate
+    copying scipy/integrate/__init__.py -> build/lib.linux-x86_64-3.4/scipy/integrate
+    copying scipy/integrate/_ode.py -> build/lib.linux-x86_64-3.4/scipy/integrate
+    copying scipy/integrate/quadpack.py -> build/lib.linux-x86_64-3.4/scipy/integrate
+    copying scipy/integrate/_bvp.py -> build/lib.linux-x86_64-3.4/scipy/integrate
+    copying scipy/integrate/odepack.py -> build/lib.linux-x86_64-3.4/scipy/integrate
+    copying scipy/integrate/setup.py -> build/lib.linux-x86_64-3.4/scipy/integrate
+    creating build/lib.linux-x86_64-3.4/scipy/interpolate
+    copying scipy/interpolate/interpolate_wrapper.py -> build/lib.linux-x86_64-3.4/scipy/interpolate
+    copying scipy/interpolate/fitpack2.py -> build/lib.linux-x86_64-3.4/scipy/interpolate
+    copying scipy/interpolate/_cubic.py -> build/lib.linux-x86_64-3.4/scipy/interpolate
+    copying scipy/interpolate/fitpack.py -> build/lib.linux-x86_64-3.4/scipy/interpolate
+    copying scipy/interpolate/__init__.py -> build/lib.linux-x86_64-3.4/scipy/interpolate
+    copying scipy/interpolate/rbf.py -> build/lib.linux-x86_64-3.4/scipy/interpolate
+    copying scipy/interpolate/interpolate.py -> build/lib.linux-x86_64-3.4/scipy/interpolate
+    copying scipy/interpolate/interpnd_info.py -> build/lib.linux-x86_64-3.4/scipy/interpolate
+    copying scipy/interpolate/polyint.py -> build/lib.linux-x86_64-3.4/scipy/interpolate
+    copying scipy/interpolate/ndgriddata.py -> build/lib.linux-x86_64-3.4/scipy/interpolate
+    copying scipy/interpolate/setup.py -> build/lib.linux-x86_64-3.4/scipy/interpolate
+    creating build/lib.linux-x86_64-3.4/scipy/io
+    copying scipy/io/mmio.py -> build/lib.linux-x86_64-3.4/scipy/io
+    copying scipy/io/idl.py -> build/lib.linux-x86_64-3.4/scipy/io
+    copying scipy/io/netcdf.py -> build/lib.linux-x86_64-3.4/scipy/io
+    copying scipy/io/__init__.py -> build/lib.linux-x86_64-3.4/scipy/io
+    copying scipy/io/wavfile.py -> build/lib.linux-x86_64-3.4/scipy/io
+    copying scipy/io/_fortran.py -> build/lib.linux-x86_64-3.4/scipy/io
+    copying scipy/io/setup.py -> build/lib.linux-x86_64-3.4/scipy/io
+    creating build/lib.linux-x86_64-3.4/scipy/io/matlab
+    copying scipy/io/matlab/mio4.py -> build/lib.linux-x86_64-3.4/scipy/io/matlab
+    copying scipy/io/matlab/__init__.py -> build/lib.linux-x86_64-3.4/scipy/io/matlab
+    copying scipy/io/matlab/mio5_params.py -> build/lib.linux-x86_64-3.4/scipy/io/matlab
+    copying scipy/io/matlab/miobase.py -> build/lib.linux-x86_64-3.4/scipy/io/matlab
+    copying scipy/io/matlab/mio5.py -> build/lib.linux-x86_64-3.4/scipy/io/matlab
+    copying scipy/io/matlab/mio.py -> build/lib.linux-x86_64-3.4/scipy/io/matlab
+    copying scipy/io/matlab/setup.py -> build/lib.linux-x86_64-3.4/scipy/io/matlab
+    copying scipy/io/matlab/byteordercodes.py -> build/lib.linux-x86_64-3.4/scipy/io/matlab
+    creating build/lib.linux-x86_64-3.4/scipy/io/arff
+    copying scipy/io/arff/arffread.py -> build/lib.linux-x86_64-3.4/scipy/io/arff
+    copying scipy/io/arff/__init__.py -> build/lib.linux-x86_64-3.4/scipy/io/arff
+    copying scipy/io/arff/setup.py -> build/lib.linux-x86_64-3.4/scipy/io/arff
+    creating build/lib.linux-x86_64-3.4/scipy/io/harwell_boeing
+    copying scipy/io/harwell_boeing/hb.py -> build/lib.linux-x86_64-3.4/scipy/io/harwell_boeing
+    copying scipy/io/harwell_boeing/__init__.py -> build/lib.linux-x86_64-3.4/scipy/io/harwell_boeing
+    copying scipy/io/harwell_boeing/_fortran_format_parser.py -> build/lib.linux-x86_64-3.4/scipy/io/harwell_boeing
+    copying scipy/io/harwell_boeing/setup.py -> build/lib.linux-x86_64-3.4/scipy/io/harwell_boeing
+    creating build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/flinalg.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/calc_lwork.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/_procrustes.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/matfuncs.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/special_matrices.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/decomp_schur.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/interpolative.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/_solvers.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/lapack.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/basic.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/__init__.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/decomp_lu.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/decomp_svd.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/decomp_qr.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/misc.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/_decomp_polar.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/decomp_cholesky.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/decomp.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/_testutils.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/_expm_frechet.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/_matfuncs_sqrtm.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/_cython_wrapper_generators.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/_cython_signature_generator.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/_decomp_qz.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/_matfuncs_inv_ssq.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/_interpolative_backend.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/setup.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/linalg_version.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    copying scipy/linalg/blas.py -> build/lib.linux-x86_64-3.4/scipy/linalg
+    creating build/lib.linux-x86_64-3.4/scipy/misc
+    copying scipy/misc/common.py -> build/lib.linux-x86_64-3.4/scipy/misc
+    copying scipy/misc/__init__.py -> build/lib.linux-x86_64-3.4/scipy/misc
+    copying scipy/misc/doccer.py -> build/lib.linux-x86_64-3.4/scipy/misc
+    copying scipy/misc/pilutil.py -> build/lib.linux-x86_64-3.4/scipy/misc
+    copying scipy/misc/setup.py -> build/lib.linux-x86_64-3.4/scipy/misc
+    creating build/lib.linux-x86_64-3.4/scipy/odr
+    copying scipy/odr/__init__.py -> build/lib.linux-x86_64-3.4/scipy/odr
+    copying scipy/odr/models.py -> build/lib.linux-x86_64-3.4/scipy/odr
+    copying scipy/odr/odrpack.py -> build/lib.linux-x86_64-3.4/scipy/odr
+    copying scipy/odr/add_newdocs.py -> build/lib.linux-x86_64-3.4/scipy/odr
+    copying scipy/odr/setup.py -> build/lib.linux-x86_64-3.4/scipy/odr
+    creating build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/_spectral.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/_trustregion_dogleg.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/optimize.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/_linprog.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/nnls.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/_root.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/linesearch.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/_minimize.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/_numdiff.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/slsqp.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/_trustregion.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/__init__.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/_trustregion_ncg.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/minpack.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/lbfgsb.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/_tstutils.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/nonlin.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/zeros.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/_basinhopping.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/_differentialevolution.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/cobyla.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/_hungarian.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/setup.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    copying scipy/optimize/tnc.py -> build/lib.linux-x86_64-3.4/scipy/optimize
+    creating build/lib.linux-x86_64-3.4/scipy/optimize/_lsq
+    copying scipy/optimize/_lsq/trf_linear.py -> build/lib.linux-x86_64-3.4/scipy/optimize/_lsq
+    copying scipy/optimize/_lsq/dogbox.py -> build/lib.linux-x86_64-3.4/scipy/optimize/_lsq
+    copying scipy/optimize/_lsq/common.py -> build/lib.linux-x86_64-3.4/scipy/optimize/_lsq
+    copying scipy/optimize/_lsq/__init__.py -> build/lib.linux-x86_64-3.4/scipy/optimize/_lsq
+    copying scipy/optimize/_lsq/bvls.py -> build/lib.linux-x86_64-3.4/scipy/optimize/_lsq
+    copying scipy/optimize/_lsq/lsq_linear.py -> build/lib.linux-x86_64-3.4/scipy/optimize/_lsq
+    copying scipy/optimize/_lsq/least_squares.py -> build/lib.linux-x86_64-3.4/scipy/optimize/_lsq
+    copying scipy/optimize/_lsq/setup.py -> build/lib.linux-x86_64-3.4/scipy/optimize/_lsq
+    copying scipy/optimize/_lsq/trf.py -> build/lib.linux-x86_64-3.4/scipy/optimize/_lsq
+    creating build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/lti_conversion.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/_savitzky_golay.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/bsplines.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/windows.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/fir_filter_design.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/__init__.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/_arraytools.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/filter_design.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/waveforms.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/_upfirdn.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/ltisys.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/wavelets.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/_peak_finding.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/signaltools.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/spectral.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/setup.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    copying scipy/signal/_max_len_seq.py -> build/lib.linux-x86_64-3.4/scipy/signal
+    creating build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/base.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/coo.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/sputils.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/dok.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/data.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/generate_sparsetools.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/bsr.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/__init__.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/spfuncs.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/lil.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/construct.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/extract.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/csc.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/csr.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/compressed.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/setup.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/dia.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    copying scipy/sparse/sparsetools.py -> build/lib.linux-x86_64-3.4/scipy/sparse
+    creating build/lib.linux-x86_64-3.4/scipy/sparse/linalg
+    copying scipy/sparse/linalg/_norm.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg
+    copying scipy/sparse/linalg/_onenormest.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg
+    copying scipy/sparse/linalg/matfuncs.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg
+    copying scipy/sparse/linalg/interface.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg
+    copying scipy/sparse/linalg/__init__.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg
+    copying scipy/sparse/linalg/_expm_multiply.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg
+    copying scipy/sparse/linalg/setup.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg
+    creating build/lib.linux-x86_64-3.4/scipy/sparse/linalg/isolve
+    copying scipy/sparse/linalg/isolve/iterative.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/isolve
+    copying scipy/sparse/linalg/isolve/utils.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/isolve
+    copying scipy/sparse/linalg/isolve/lsqr.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/isolve
+    copying scipy/sparse/linalg/isolve/lsmr.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/isolve
+    copying scipy/sparse/linalg/isolve/lgmres.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/isolve
+    copying scipy/sparse/linalg/isolve/__init__.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/isolve
+    copying scipy/sparse/linalg/isolve/minres.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/isolve
+    copying scipy/sparse/linalg/isolve/setup.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/isolve
+    creating build/lib.linux-x86_64-3.4/scipy/sparse/linalg/dsolve
+    copying scipy/sparse/linalg/dsolve/__init__.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/dsolve
+    copying scipy/sparse/linalg/dsolve/linsolve.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/dsolve
+    copying scipy/sparse/linalg/dsolve/_add_newdocs.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/dsolve
+    copying scipy/sparse/linalg/dsolve/setup.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/dsolve
+    creating build/lib.linux-x86_64-3.4/scipy/sparse/linalg/eigen
+    copying scipy/sparse/linalg/eigen/__init__.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/eigen
+    copying scipy/sparse/linalg/eigen/setup.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/eigen
+    creating build/lib.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack
+    copying scipy/sparse/linalg/eigen/arpack/arpack.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack
+    copying scipy/sparse/linalg/eigen/arpack/__init__.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack
+    copying scipy/sparse/linalg/eigen/arpack/setup.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/eigen/arpack
+    creating build/lib.linux-x86_64-3.4/scipy/sparse/linalg/eigen/lobpcg
+    copying scipy/sparse/linalg/eigen/lobpcg/__init__.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/eigen/lobpcg
+    copying scipy/sparse/linalg/eigen/lobpcg/lobpcg.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/eigen/lobpcg
+    copying scipy/sparse/linalg/eigen/lobpcg/setup.py -> build/lib.linux-x86_64-3.4/scipy/sparse/linalg/eigen/lobpcg
+    creating build/lib.linux-x86_64-3.4/scipy/sparse/csgraph
+    copying scipy/sparse/csgraph/_components.py -> build/lib.linux-x86_64-3.4/scipy/sparse/csgraph
+    copying scipy/sparse/csgraph/_validation.py -> build/lib.linux-x86_64-3.4/scipy/sparse/csgraph
+    copying scipy/sparse/csgraph/__init__.py -> build/lib.linux-x86_64-3.4/scipy/sparse/csgraph
+    copying scipy/sparse/csgraph/_laplacian.py -> build/lib.linux-x86_64-3.4/scipy/sparse/csgraph
+    copying scipy/sparse/csgraph/setup.py -> build/lib.linux-x86_64-3.4/scipy/sparse/csgraph
+    creating build/lib.linux-x86_64-3.4/scipy/spatial
+    copying scipy/spatial/distance.py -> build/lib.linux-x86_64-3.4/scipy/spatial
+    copying scipy/spatial/_procrustes.py -> build/lib.linux-x86_64-3.4/scipy/spatial
+    copying scipy/spatial/_plotutils.py -> build/lib.linux-x86_64-3.4/scipy/spatial
+    copying scipy/spatial/__init__.py -> build/lib.linux-x86_64-3.4/scipy/spatial
+    copying scipy/spatial/_spherical_voronoi.py -> build/lib.linux-x86_64-3.4/scipy/spatial
+    copying scipy/spatial/kdtree.py -> build/lib.linux-x86_64-3.4/scipy/spatial
+    copying scipy/spatial/setup.py -> build/lib.linux-x86_64-3.4/scipy/spatial
+    creating build/lib.linux-x86_64-3.4/scipy/special
+    copying scipy/special/_ellip_harm.py -> build/lib.linux-x86_64-3.4/scipy/special
+    copying scipy/special/spfun_stats.py -> build/lib.linux-x86_64-3.4/scipy/special
+    copying scipy/special/basic.py -> build/lib.linux-x86_64-3.4/scipy/special
+    copying scipy/special/__init__.py -> build/lib.linux-x86_64-3.4/scipy/special
+    copying scipy/special/generate_ufuncs.py -> build/lib.linux-x86_64-3.4/scipy/special
+    copying scipy/special/_spherical_bessel.py -> build/lib.linux-x86_64-3.4/scipy/special
+    copying scipy/special/_testutils.py -> build/lib.linux-x86_64-3.4/scipy/special
+    copying scipy/special/_mptestutils.py -> build/lib.linux-x86_64-3.4/scipy/special
+    copying scipy/special/add_newdocs.py -> build/lib.linux-x86_64-3.4/scipy/special
+    copying scipy/special/lambertw.py -> build/lib.linux-x86_64-3.4/scipy/special
+    copying scipy/special/orthogonal.py -> build/lib.linux-x86_64-3.4/scipy/special
+    copying scipy/special/setup.py -> build/lib.linux-x86_64-3.4/scipy/special
+    creating build/lib.linux-x86_64-3.4/scipy/special/_precompute
+    copying scipy/special/_precompute/utils.py -> build/lib.linux-x86_64-3.4/scipy/special/_precompute
+    copying scipy/special/_precompute/__init__.py -> build/lib.linux-x86_64-3.4/scipy/special/_precompute
+    copying scipy/special/_precompute/gammainc_asy.py -> build/lib.linux-x86_64-3.4/scipy/special/_precompute
+    copying scipy/special/_precompute/gammainc_data.py -> build/lib.linux-x86_64-3.4/scipy/special/_precompute
+    copying scipy/special/_precompute/setup.py -> build/lib.linux-x86_64-3.4/scipy/special/_precompute
+    creating build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/mstats_extras.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/_distr_params.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/_continuous_distns.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/distributions.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/_constants.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/_multivariate.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/_stats_mstats_common.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/__init__.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/stats.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/mstats_basic.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/_binned_statistic.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/kde.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/_discrete_distns.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/_tukeylambda_stats.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/contingency.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/vonmises.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/_distn_infrastructure.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/mstats.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/setup.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    copying scipy/stats/morestats.py -> build/lib.linux-x86_64-3.4/scipy/stats
+    creating build/lib.linux-x86_64-3.4/scipy/ndimage
+    copying scipy/ndimage/filters.py -> build/lib.linux-x86_64-3.4/scipy/ndimage
+    copying scipy/ndimage/_ni_support.py -> build/lib.linux-x86_64-3.4/scipy/ndimage
+    copying scipy/ndimage/measurements.py -> build/lib.linux-x86_64-3.4/scipy/ndimage
+    copying scipy/ndimage/__init__.py -> build/lib.linux-x86_64-3.4/scipy/ndimage
+    copying scipy/ndimage/interpolation.py -> build/lib.linux-x86_64-3.4/scipy/ndimage
+    copying scipy/ndimage/fourier.py -> build/lib.linux-x86_64-3.4/scipy/ndimage
+    copying scipy/ndimage/morphology.py -> build/lib.linux-x86_64-3.4/scipy/ndimage
+    copying scipy/ndimage/io.py -> build/lib.linux-x86_64-3.4/scipy/ndimage
+    copying scipy/ndimage/setup.py -> build/lib.linux-x86_64-3.4/scipy/ndimage
+    creating build/lib.linux-x86_64-3.4/scipy/_build_utils
+    copying scipy/_build_utils/__init__.py -> build/lib.linux-x86_64-3.4/scipy/_build_utils
+    copying scipy/_build_utils/_fortran.py -> build/lib.linux-x86_64-3.4/scipy/_build_utils
+    creating build/lib.linux-x86_64-3.4/scipy/_lib
+    copying scipy/_lib/decorator.py -> build/lib.linux-x86_64-3.4/scipy/_lib
+    copying scipy/_lib/six.py -> build/lib.linux-x86_64-3.4/scipy/_lib
+    copying scipy/_lib/__init__.py -> build/lib.linux-x86_64-3.4/scipy/_lib
+    copying scipy/_lib/_numpy_compat.py -> build/lib.linux-x86_64-3.4/scipy/_lib
+    copying scipy/_lib/_tmpdirs.py -> build/lib.linux-x86_64-3.4/scipy/_lib
+    copying scipy/_lib/_version.py -> build/lib.linux-x86_64-3.4/scipy/_lib
+    copying scipy/_lib/_testutils.py -> build/lib.linux-x86_64-3.4/scipy/_lib
+    copying scipy/_lib/_util.py -> build/lib.linux-x86_64-3.4/scipy/_lib
+    copying scipy/_lib/_threadsafety.py -> build/lib.linux-x86_64-3.4/scipy/_lib
+    copying scipy/_lib/_gcutils.py -> build/lib.linux-x86_64-3.4/scipy/_lib
+    copying scipy/_lib/setup.py -> build/lib.linux-x86_64-3.4/scipy/_lib
+    running build_clib
+    customize UnixCCompiler
+    customize UnixCCompiler using build_clib
+    customize Gnu95FCompiler
+    customize Gnu95FCompiler
+    customize Gnu95FCompiler using build_clib
+    building 'dfftpack' library
+    compiling Fortran sources
+    Fortran f77 compiler: /usr/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+    Fortran f90 compiler: /usr/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+    Fortran fix compiler: /usr/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+    creating build/temp.linux-x86_64-3.4
+    creating build/temp.linux-x86_64-3.4/scipy
+    creating build/temp.linux-x86_64-3.4/scipy/fftpack
+    creating build/temp.linux-x86_64-3.4/scipy/fftpack/src
+    creating build/temp.linux-x86_64-3.4/scipy/fftpack/src/dfftpack
+    compile options: '-I/root/virtualenv/lib/python3.4/site-packages/numpy/core/include -c'
+    gfortran:f77: scipy/fftpack/src/dfftpack/dfftf.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dffti.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dffti1.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dcosqi.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/zffti.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dsinqf.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dsint.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dfftf1.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dcosqb.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dcosqf.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/zfftb.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dcosti.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dsinqi.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dsint1.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dsinqb.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/zfftf.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/zfftf1.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/zffti1.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dcost.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dfftb1.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dfftb.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/zfftb1.f
+    gfortran:f77: scipy/fftpack/src/dfftpack/dsinti.f
+    x86_64-linux-gnu-gcc-ar: adding 23 object files to build/temp.linux-x86_64-3.4/libdfftpack.a
+    building 'fftpack' library
+    compiling Fortran sources
+    Fortran f77 compiler: /usr/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+    Fortran f90 compiler: /usr/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+    Fortran fix compiler: /usr/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+    creating build/temp.linux-x86_64-3.4/scipy/fftpack/src/fftpack
+    compile options: '-I/root/virtualenv/lib/python3.4/site-packages/numpy/core/include -c'
+    gfortran:f77: scipy/fftpack/src/fftpack/sint1.f
+    gfortran:f77: scipy/fftpack/src/fftpack/sinqi.f
+    gfortran:f77: scipy/fftpack/src/fftpack/rfftf.f
+    gfortran:f77: scipy/fftpack/src/fftpack/cosqi.f
+    gfortran:f77: scipy/fftpack/src/fftpack/cost.f
+    gfortran:f77: scipy/fftpack/src/fftpack/cffti.f
+    gfortran:f77: scipy/fftpack/src/fftpack/rffti.f
+    gfortran:f77: scipy/fftpack/src/fftpack/cffti1.f
+    gfortran:f77: scipy/fftpack/src/fftpack/sinti.f
+    gfortran:f77: scipy/fftpack/src/fftpack/cfftf.f
+    gfortran:f77: scipy/fftpack/src/fftpack/cosqf.f
+    gfortran:f77: scipy/fftpack/src/fftpack/cfftb.f
+    gfortran:f77: scipy/fftpack/src/fftpack/costi.f
+    gfortran:f77: scipy/fftpack/src/fftpack/cosqb.f
+    gfortran:f77: scipy/fftpack/src/fftpack/rfftf1.f
+    gfortran:f77: scipy/fftpack/src/fftpack/rffti1.f
+    gfortran:f77: scipy/fftpack/src/fftpack/cfftb1.f
 Cleaning up...
-  Removing temporary dir /tmp/pip_build_root...
-Command /usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip_build_root/SciPy/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-MMBDQ2-record/install-record.txt --single-version-externally-managed --compile failed with error code 1 in /tmp/pip_build_root/SciPy
+  Removing temporary dir /root/virtualenv/build...
+Operation cancelled by user
 Exception information:
 Traceback (most recent call last):
-  File "/usr/lib/python2.7/dist-packages/pip/basecommand.py", line 122, in main
+  File "/root/virtualenv/lib/python3.4/site-packages/pip/basecommand.py", line 122, in main
     status = self.run(options, args)
-  File "/usr/lib/python2.7/dist-packages/pip/commands/install.py", line 283, in run
+  File "/root/virtualenv/lib/python3.4/site-packages/pip/commands/install.py", line 283, in run
     requirement_set.install(install_options, global_options, root=options.root_path)
-  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 1436, in install
+  File "/root/virtualenv/lib/python3.4/site-packages/pip/req.py", line 1435, in install
     requirement.install(install_options, global_options, *args, **kwargs)
-  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 707, in install
+  File "/root/virtualenv/lib/python3.4/site-packages/pip/req.py", line 706, in install
     cwd=self.source_dir, filter_stdout=self._filter_install, show_stdout=False)
-  File "/usr/lib/python2.7/dist-packages/pip/util.py", line 715, in call_subprocess
-    % (command_desc, proc.returncode, cwd))
-InstallationError: Command /usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip_build_root/SciPy/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-MMBDQ2-record/install-record.txt --single-version-externally-managed --compile failed with error code 1 in /tmp/pip_build_root/SciPy
+  File "/root/virtualenv/lib/python3.4/site-packages/pip/util.py", line 672, in call_subprocess
+    line = console_to_str(stdout.readline())
+KeyboardInterrupt
