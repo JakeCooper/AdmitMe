@@ -1,0 +1,3 @@
+#!/root/virtualenv/bin/python3
+from requirements_detector.run import run
+run()
